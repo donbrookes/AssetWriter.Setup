@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.7.1" version="22.2" PreviousModules="professional" Modules="enterprise" RootPath="D:\MEDS\AssetReader\AssetReader.Setup" Language="en" Id="{71A3A2C6-D01F-4156-9EEA-68315A61D073}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_APP_FILE" Value="[#AssetReader.Main.exe]"/>
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_INSTALLPERUSER" Value="0" Type="4" MsiKey="AI_INSTALLPERUSER"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_VERSION;AI_DETECTED_ADMIN_USER;AI_DETECTED_PHYSICAL_MEMORY;AI_DETECTED_INTERNET_CONNECTION"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_PHYSICAL_MEMORY" MultiBuildValue="DefaultBuild:4096" ValueLocId="-"/>
+    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:style2blue" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="[|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="Joseph Caplan"/>
+    <ROW Property="ARPHELPLINK" Value="https://www.finsoft.net/downloads/DownloadMainFinSoft"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="410 747-7994"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="AssetWriter.Main.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://www.finsoft.net/"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://www.finsoft.net/Content/Support.htm"/>
+    <ROW Property="AiEmbeddedUI" Value="1"/>
+    <ROW Property="AiLicenseAgreementLink" Value="https://www.finsoft.net/Content/agree.htm" Type="4"/>
+    <ROW Property="AiWinUI" Value="1"/>
+    <ROW Property="AiWinUIBtnBackgroundDisabled" MultiBuildValue="DefaultBuild:##000000"/>
+    <ROW Property="AiWinUIBtnBackgroundNormal" MultiBuildValue="DefaultBuild:##000000"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityDisabled" MultiBuildValue="DefaultBuild:0"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityNormal" MultiBuildValue="DefaultBuild:0"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityPointerOver" MultiBuildValue="DefaultBuild:0.082"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityPressed" MultiBuildValue="DefaultBuild:0"/>
+    <ROW Property="AiWinUIBtnBackgroundPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnBackgroundPressed" MultiBuildValue="DefaultBuild:##000000"/>
+    <ROW Property="AiWinUIBtnBorderDisabled" MultiBuildValue="DefaultBuild:##676767"/>
+    <ROW Property="AiWinUIBtnBorderNormal" MultiBuildValue="DefaultBuild:##676767"/>
+    <ROW Property="AiWinUIBtnBorderOpacityDisabled" MultiBuildValue="DefaultBuild:0.098"/>
+    <ROW Property="AiWinUIBtnBorderPointerOver" MultiBuildValue="DefaultBuild:##9FD3F6"/>
+    <ROW Property="AiWinUIBtnBorderPressed" MultiBuildValue="DefaultBuild:##B4EFFF"/>
+    <ROW Property="AiWinUIBtnForegroundDisabled" MultiBuildValue="DefaultBuild:##6D6D6D"/>
+    <ROW Property="AiWinUIBtnForegroundNormal" MultiBuildValue="DefaultBuild:##9E9E9E"/>
+    <ROW Property="AiWinUIBtnForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundDisabled" MultiBuildValue="DefaultBuild:##535353"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundNormal" MultiBuildValue="DefaultBuild:##1E8000"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundOpacityDisabled" MultiBuildValue="DefaultBuild:0.058"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundOpacityPointerOver" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundPointerOver" MultiBuildValue="DefaultBuild:##489900"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundPressed" MultiBuildValue="DefaultBuild:##234C00"/>
+    <ROW Property="AiWinUIBtnInstallBorderDisabled" MultiBuildValue="DefaultBuild:##535353"/>
+    <ROW Property="AiWinUIBtnInstallBorderNormal" MultiBuildValue="DefaultBuild:##249900"/>
+    <ROW Property="AiWinUIBtnInstallBorderOpacityDisabled" MultiBuildValue="DefaultBuild:0.058"/>
+    <ROW Property="AiWinUIBtnInstallBorderPointerOver" MultiBuildValue="DefaultBuild:##54B300"/>
+    <ROW Property="AiWinUIBtnInstallBorderPressed" MultiBuildValue="DefaultBuild:##2C5F00"/>
+    <ROW Property="AiWinUIBtnInstallForegroundDisabled" MultiBuildValue="DefaultBuild:##2E2E2E"/>
+    <ROW Property="AiWinUIBtnInstallForegroundNormal" MultiBuildValue="DefaultBuild:##D6D6D6"/>
+    <ROW Property="AiWinUIBtnInstallForegroundPointerOver" MultiBuildValue="DefaultBuild:##D6D6D6"/>
+    <ROW Property="AiWinUIBtnInstallForegroundPressed" MultiBuildValue="DefaultBuild:##D6D6D6"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundNormal" MultiBuildValue="DefaultBuild:##006ACC"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundPointerOver" MultiBuildValue="DefaultBuild:##0077E6"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundPressed" MultiBuildValue="DefaultBuild:##0076E6"/>
+    <ROW Property="AiWinUIBtnModifyBorderPointerOver" MultiBuildValue="DefaultBuild:##0082FB"/>
+    <ROW Property="AiWinUIBtnModifyForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnModifyForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnModifyForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnPrintBorderDisabled" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnPrintBorderNormal" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnPrintBorderPointerOver" MultiBuildValue="DefaultBuild:##9FD3F6"/>
+    <ROW Property="AiWinUIBtnPrintBorderPressed" MultiBuildValue="DefaultBuild:##9FD3F6"/>
+    <ROW Property="AiWinUIBtnPrintForegroundDisabled" MultiBuildValue="DefaultBuild:##9E9E9E"/>
+    <ROW Property="AiWinUIBtnPrintForegroundNormal" MultiBuildValue="DefaultBuild:##9E9E9E"/>
+    <ROW Property="AiWinUIBtnPrintForegroundPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnPrintForegroundPressed" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundNormal" MultiBuildValue="DefaultBuild:##9E1A00"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundPointerOver" MultiBuildValue="DefaultBuild:##B81F00"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundPressed" MultiBuildValue="DefaultBuild:##B81F00"/>
+    <ROW Property="AiWinUIBtnRemoveBorderPointerOver" MultiBuildValue="DefaultBuild:##CF2300"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundNormal" MultiBuildValue="DefaultBuild:##1E8000"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundPointerOver" MultiBuildValue="DefaultBuild:##489900"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundPressed" MultiBuildValue="DefaultBuild:##489900"/>
+    <ROW Property="AiWinUIBtnRepairBorderPointerOver" MultiBuildValue="DefaultBuild:##53B100"/>
+    <ROW Property="AiWinUIBtnRepairForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunBackgroundNormal" MultiBuildValue="DefaultBuild:##32801A"/>
+    <ROW Property="AiWinUIBtnRunBackgroundPointerOver" MultiBuildValue="DefaultBuild:##549921"/>
+    <ROW Property="AiWinUIBtnRunBackgroundPressed" MultiBuildValue="DefaultBuild:##549921"/>
+    <ROW Property="AiWinUIBtnRunBorderPointerOver" MultiBuildValue="DefaultBuild:##5EB229"/>
+    <ROW Property="AiWinUIBtnRunForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundNormal" MultiBuildValue="DefaultBuild:##006ACC"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundPointerOver" MultiBuildValue="DefaultBuild:##0077E6"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundPressed" MultiBuildValue="DefaultBuild:##0076E6"/>
+    <ROW Property="AiWinUIBtnViewReadmeBorderPointerOver" MultiBuildValue="DefaultBuild:##0082FB"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="DIRBACKUP" Value=" "/>
+    <ROW Property="DIREXAM" Value=" "/>
+    <ROW Property="DIREXPORT" Value=" "/>
+    <ROW Property="DIRFILES" Value=" "/>
+    <ROW Property="DIRIMPORT" Value=" "/>
+    <ROW Property="DIRSECURITY" Value=" "/>
+    <ROW Property="DIRTEMPLATE" Value=" "/>
+    <ROW Property="IAgree" Value="No" Type="4"/>
+    <ROW Property="Manufacturer" Value="Finsoft"/>
+    <ROW Property="ProductCode" Value="1033:{D01AD04B-E3AB-4FEA-B6B6-67EC1E88F1BE} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="AssetWriter"/>
+    <ROW Property="ProductVersion" Value="2024.4.2.1" Options="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;UPGRADE_1"/>
+    <ROW Property="UpgradeCode" Value="{378C2D3D-707C-4777-AFA4-73E15A7644DE}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Config_Dir" Directory_Parent="APPDIR" DefaultDir="Config"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Dictionaries_Dir" Directory_Parent="TXSpell_Dir" DefaultDir="DICTIO~1|Dictionaries"/>
+    <ROW Directory="DotNetBar_Dir" Directory_Parent="APPDIR" DefaultDir=".:DOTNET~1|DotNetBar"/>
+    <ROW Directory="Fonts_Dir" Directory_Parent="APPDIR" DefaultDir="Fonts"/>
+    <ROW Directory="GemBoxDoc_Dir" Directory_Parent="APPDIR" DefaultDir=".:GEMBOX~1|GemBoxDoc"/>
+    <ROW Directory="GemBox_Dir" Directory_Parent="APPDIR" DefaultDir=".:GemBox"/>
+    <ROW Directory="HTMLAgilityPack_Dir" Directory_Parent="APPDIR" DefaultDir=".:HTMLAG~1|HTMLAgilityPack"/>
+    <ROW Directory="HyphenationLists_Dir" Directory_Parent="TXSpell_Dir" DefaultDir="HYPHEN~1|HyphenationLists"/>
+    <ROW Directory="License_Dir" Directory_Parent="APPDIR" DefaultDir="License"/>
+    <ROW Directory="Rebex_Dir" Directory_Parent="APPDIR" DefaultDir=".:Rebex"/>
+    <ROW Directory="Runtimes_Dir" Directory_Parent="APPDIR" DefaultDir="Runtimes"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="SQLite_Dir" Directory_Parent="APPDIR" DefaultDir=".:SQLite"/>
+    <ROW Directory="SampleDatabases_Dir" Directory_Parent="APPDIR" DefaultDir="Exams"/>
+    <ROW Directory="Spread" Directory_Parent="APPDIR" DefaultDir=".:Spread"/>
+    <ROW Directory="SynonymLists_Dir" Directory_Parent="TXSpell_Dir" DefaultDir="SYNONY~1|SynonymLists"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TXSpell_Dir" Directory_Parent="APPDIR" DefaultDir=".:TXSpell"/>
+    <ROW Directory="TX_Dir" Directory_Parent="APPDIR" DefaultDir=".:TX"/>
+    <ROW Directory="UACHelper_Dir" Directory_Parent="APPDIR" DefaultDir=".:UACHEL~1|UACHelper"/>
+    <ROW Directory="VistDb_Dir" Directory_Parent="APPDIR" DefaultDir=".:VistaDb"/>
+    <ROW Directory="WPStyles_Dir" Directory_Parent="APPDIR" DefaultDir="WPStyles"/>
+    <ROW Directory="__1_Dir" Directory_Parent="TX_Dir" DefaultDir=".:64"/>
+    <ROW Directory="x64_1_Dir" Directory_Parent="SQLite_Dir" DefaultDir="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="ABL_HLP.chm" Value="{ABA58BD4-EE7D-4DC7-8884-E7F40E6C6E95}"/>
+    <ROW Component="AI_INSTALLPERUSER" Value="{D951FACC-4E90-4EE2-8E73-AEBE64828AA2}"/>
+    <ROW Component="APPDIR" Value="{4456A961-0858-47F2-B549-1ABF12B576DC}"/>
+    <ROW Component="AssetReader.Main.exe" Value="{6F6E433F-67A5-4406-A3E1-CBC6F331B789}"/>
+    <ROW Component="BouncyCastle.Crypto.dll" Value="{7E07AA4A-747F-4CF5-834A-FCFFA9F6B1F2}"/>
+    <ROW Component="BouncyCastle.Cryptography.dll_1" Value="{4520B866-0756-424B-806D-1144225FDFBD}"/>
+    <ROW Component="Config" Value="{64DE72D4-DBBD-412D-9E1A-8505654796DC}"/>
+    <ROW Component="DevComponents.DotNetBar2.dll_1" Value="{6C75E07D-8DC7-4B79-AD11-D4614DD1C0D8}"/>
+    <ROW Component="DevComponents.TreeGX.dll_1" Value="{7324E8A1-30BA-43E6-B536-78A1D462A379}"/>
+    <ROW Component="FarPoint.CalcEngine.dll_1" Value="{F14684AC-158C-4E12-8057-1AAC9DE83905}"/>
+    <ROW Component="FarPoint.Excel.dll_1" Value="{9336A6A7-4A53-4078-AD1F-F2ED10C65CAD}"/>
+    <ROW Component="FarPoint.PDF.dll_1"/>
+    <ROW Component="FarPoint.PluginCalendar.WinForms.dll_1" Value="{BE99A866-92B4-4AB3-AF4A-DB181A3E6C10}"/>
+    <ROW Component="FarPoint.Win.Chart.Design.dll_1"/>
+    <ROW Component="FarPoint.Win.Chart.dll_1"/>
+    <ROW Component="FarPoint.Win.Design.dll_1"/>
+    <ROW Component="FarPoint.Win.Ink.dll_1"/>
+    <ROW Component="FarPoint.Win.Spread.Design.dll_1"/>
+    <ROW Component="FarPoint.Win.Spread.Html.dll_1"/>
+    <ROW Component="FarPoint.Win.Spread.dll_1" Value="{2ABF94D5-7A42-441A-9813-F50E46E6A1C1}"/>
+    <ROW Component="FarPoint.Win.TextRenderer.dll_1"/>
+    <ROW Component="FarPoint.Win.dll_1" Value="{39AAD9EA-C9B3-43C7-B559-D218E710624A}"/>
+    <ROW Component="Finsoft.Licensing.dll" Value="{D05405F1-8571-4997-9687-CC1F4EB0D024}"/>
+    <ROW Component="GemBox.Document.dll" Value="{C9162C5C-D4CB-4FE1-AA9D-6C27E791E581}"/>
+    <ROW Component="GemBox.Spreadsheet.dll_1" Value="{38F6A609-3B53-4291-AD2D-359A45E96C8C}"/>
+    <ROW Component="GrapeCity.CalcEngine.dll_1" Value="{12A453E3-D77A-4AD8-8796-499D3E8E3012}"/>
+    <ROW Component="GrapeCity.Spreadsheet.DataVisualizat_1_ion.dll"/>
+    <ROW Component="GrapeCity.Spreadsheet.Win.dll_1" Value="{8444DCE7-1876-4099-BA01-E0B7FB4E261B}"/>
+    <ROW Component="GrapeCity.Spreadsheet.WinForms.Ribbo_1_n.dll"/>
+    <ROW Component="GrapeCity.Spreadsheet.dll_1" Value="{6BA51F16-2E5D-483C-8528-E8E42F6122DC}"/>
+    <ROW Component="GrapeCity.Win.PluginInputMan.Design._1_dll"/>
+    <ROW Component="GrapeCity.Win.PluginInputMan.dll_1"/>
+    <ROW Component="HarfBuzzSharp.dll" Value="{444EC944-55E2-4CE3-9709-912B3E1B2599}"/>
+    <ROW Component="HtmlAgilityPack.dll" Value="{34E39F39-6FFC-4B47-B71C-35261283BD06}"/>
+    <ROW Component="Latin1a.unicodeMap" Value="{0A476D2F-8AD5-4871-81CD-93FD0E5323EE}"/>
+    <ROW Component="License" Value="{D0740086-BCC9-4ABE-9AB6-ACB30A42BA8C}"/>
+    <ROW Component="ProductInformation" Value="{A43FEF72-1B0C-412A-B732-770DD35C46F8}"/>
+    <ROW Component="R2.lic"/>
+    <ROW Component="Reader.chm" Value="{C20121B4-F52F-44EB-B989-0076691CB7AE}"/>
+    <ROW Component="Rebex.Common.dll" Value="{6BBDAF0B-6DBD-4E58-ABEF-7048CDEF0867}"/>
+    <ROW Component="Rebex.Ews.dll" Value="{21E675A5-BA8C-4307-BE0A-0B9A141016B5}"/>
+    <ROW Component="Rebex.Ftp.dll" Value="{8DA6D55B-B678-4298-9E68-85C3927567E4}"/>
+    <ROW Component="Rebex.Imap.dll" Value="{F6F5C5B9-A5B9-4503-99A8-9D29900E1B72}"/>
+    <ROW Component="Rebex.Mail.dll" Value="{EB30ADDA-0441-4115-9655-F47BF2B47E46}"/>
+    <ROW Component="Rebex.Networking.dll" Value="{AFA7C554-88C2-457C-B020-A9B0E9B25F11}"/>
+    <ROW Component="Rebex.Pop3.dll" Value="{D82944C0-86C3-4F1C-9F75-8606FFB25E6D}"/>
+    <ROW Component="Rebex.Smtp.dll" Value="{973C8A00-7416-4A74-BB7B-6EAB08BC195F}"/>
+    <ROW Component="Rebex.Zip.dll" Value="{96E05D48-9BEA-43A1-913B-FC138BA2DAE6}"/>
+    <ROW Component="Runtimes" Value="{76B3F5BB-F140-4E59-AFEF-81F8D5F8BB41}"/>
+    <ROW Component="SHORTCUTDIR" Value="{B7284B97-63ED-459B-9435-3E118F7FBA6B}"/>
+    <ROW Component="SQLite.Interop.dll_2" Value="{740C626B-686D-49C5-812C-563B29647E2B}"/>
+    <ROW Component="SkiaSharp.dll" Value="{DC9E6406-3E32-4031-AAAD-26C72927EE22}"/>
+    <ROW Component="System.Buffers.dll" Value="{F60B51E4-A35F-4FE9-9C19-6DFBD32D26B7}"/>
+    <ROW Component="System.Data.SQLite.EF6.dll_2" Value="{B006465F-44E5-4B22-9A8F-24EEB64F5E1B}"/>
+    <ROW Component="System.Data.SQLite.Linq.dll_2" Value="{3816D886-A806-43D0-87AA-B561A0335AE6}"/>
+    <ROW Component="System.Data.SQLite.dll_2" Value="{0C418C2E-43EF-4A0C-870E-80EB05A67284}"/>
+    <ROW Component="System.ValueTuple.dll" Value="{5D3C129E-1FF5-41CC-A6FB-03A0BB79C48A}"/>
+    <ROW Component="TXBarcode.Windows.Forms.dll" Value="{6E77CB23-B2A5-4AB6-8EEB-DAFF0663F216}"/>
+    <ROW Component="TXBarcode.Windows.Forms.xml" Value="{795221D5-0F22-495F-AB27-BA5F84893F05}"/>
+    <ROW Component="TXBarcode.dll" Value="{F93D337F-6F3A-43C0-A650-12F825FD9F2E}"/>
+    <ROW Component="TXDocumentServer.Windows.Forms.Design.dll" Value="{63662F2C-8F0D-4F01-81BF-794F52A590C4}"/>
+    <ROW Component="TXDocumentServer.Windows.Forms.dll" Value="{56D95DFB-80F2-43F6-9CB0-618E88ED661C}"/>
+    <ROW Component="TXDocumentServer.dll" Value="{56938903-99B2-4484-B87F-748F1696623A}"/>
+    <ROW Component="TXDrawing.Windows.Forms.dll" Value="{67ABDF20-9A53-467D-A6E0-C6E37C8AE333}"/>
+    <ROW Component="TXDrawing.dll" Value="{3619A9FA-9104-46AD-AF2E-7F71CD336E0A}"/>
+    <ROW Component="TXImageProvider.dll" Value="{A0F34AA8-2849-4D47-A8C0-BB868CA7376F}"/>
+    <ROW Component="TXSVGGenerator.dll" Value="{6631E320-DE6B-4112-9386-D098FDD0E7E1}"/>
+    <ROW Component="TXSpell.Windows.Forms.dll" Value="{70E5014F-A3DD-4B43-845A-C9B40AE297EE}"/>
+    <ROW Component="TXSpell.dll" Value="{9C744B08-8A57-425C-9AC1-FCB0AB4D47E3}"/>
+    <ROW Component="TXTextControl.Server.dll" Value="{4C74EDB7-FD13-48FE-A946-AD175644FE9E}"/>
+    <ROW Component="TXTextControl.Windows.Forms.Design.dll" Value="{CAD33D1F-B5A8-47A7-BDAA-E7C3AA82D1C8}"/>
+    <ROW Component="TXTextControl.Windows.Forms.dll" Value="{F043009D-9CA6-444F-92B1-A0BBFA40B7E0}"/>
+    <ROW Component="TXTextControl.dll" Value="{4D5D9912-E166-4B86-8D84-F671D51EAFF4}"/>
+    <ROW Component="UACHelper.dll" Value="{9C28D9E0-2AD2-4331-BE75-16D34AC4C8EB}"/>
+    <ROW Component="VC_redist.x64.exe" Value="{870B05C6-9481-48E7-9589-231C71616E56}"/>
+    <ROW Component="WaitForm.dll" Value="{BB9331E7-266D-4C36-8095-E45E8356952A}"/>
+    <ROW Component="en_US.aff" Value="{61187983-D379-40E7-99F7-B7C8E8DD3028}"/>
+    <ROW Component="hyph_en_US.dic" Value="{E18150CE-B49A-47F0-BC3F-456A2200DD69}"/>
+    <ROW Component="policy.17.0.FarPoint.Win.Chart.dll_1"/>
+    <ROW Component="policy.17.0.FarPoint.Win.Spread.dll_1"/>
+    <ROW Component="policy.17.0.FarPoint.Win.dll_1"/>
+    <ROW Component="policy.17.0.GrapeCity.Spreadsheet.dll_1"/>
+    <ROW Component="th_en_US_v2.dat" Value="{8015EE0C-5622-44E5-8D0E-E09C4E9CDB83}"/>
+    <ROW Component="tx32_css.dll_1" Value="{DBDF7C87-673F-42A5-8576-795C7A0D2919}"/>
+    <ROW Component="tx32_doc.dll_1" Value="{789E0ED9-127D-49BE-8039-09D7E98EF65D}"/>
+    <ROW Component="tx32_dox.dll_1" Value="{E7A242BE-BD9E-4193-B5E5-A88BAB7EE1E1}"/>
+    <ROW Component="tx32_htm.dll_1" Value="{F0B1F664-AD3B-42A9-8DED-4790FFE1BE72}"/>
+    <ROW Component="tx32_pdf.dll_1" Value="{60790AB4-70EF-4720-996F-E4C04F7B9462}"/>
+    <ROW Component="tx32_rtf.dll_1" Value="{6189B76D-D928-458C-AE66-25F7ABC14B19}"/>
+    <ROW Component="tx32_xlx.dll_1" Value="{500B6489-BC25-4543-9DC7-9A2089A94C9F}"/>
+    <ROW Component="tx32_xml.dll_1" Value="{627753DD-C418-4A1B-B586-0B1B7219EDE1}"/>
+    <ROW Component="txic.dll_1" Value="{25D021BB-434A-4635-AE56-D975C3FAD0DA}"/>
+    <ROW Component="txkernel.dll_1" Value="{74AA3623-4600-48B5-B9C6-B3686951461B}"/>
+    <ROW Component="txpdf.dll" Value="{3E533B21-455E-4A5D-8DA5-56E1FD4C9820}"/>
+    <ROW Component="txtools.dll_1" Value="{51AA205A-E799-4F78-A329-39D820148115}"/>
+    <ROW Component="x64" Value="{BF8438BF-8D8D-4349-B79D-FCBF86968D1F}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="ABL_HLP.chm" ComponentId="{ABA58BD4-EE7D-4DC7-8884-E7F40E6C6E95}" Directory_="APPDIR" Attributes="0" KeyPath="ABL_HLP.chm" Type="1"/>
+    <ROW Component="AI_INSTALLPERUSER" ComponentId="{D951FACC-4E90-4EE2-8E73-AEBE64828AA2}" Directory_="APPDIR" Attributes="260" KeyPath="AI_INSTALLPERUSER" Options="1"/>
+    <ROW Component="APPDIR" ComponentId="{4456A961-0858-47F2-B549-1ABF12B576DC}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AWL.lic" ComponentId="{B7A5272D-BB3C-4B45-B884-34F167420836}" Directory_="License_Dir" Attributes="0" KeyPath="AWL.lic" Type="0"/>
+    <ROW Component="AssetReader.Main.exe" ComponentId="{6F6E433F-67A5-4406-A3E1-CBC6F331B789}" Directory_="APPDIR" Attributes="0" KeyPath="AssetReader.Main.exe"/>
+    <ROW Component="AssetWriter.Utilities.exe" ComponentId="{417A2E34-E64B-4BD8-8FEE-C274FCD0404F}" Directory_="APPDIR" Attributes="0" KeyPath="AssetWriter.Utilities.exe"/>
+    <ROW Component="BouncyCastle.Crypto.dll" ComponentId="{7E07AA4A-747F-4CF5-834A-FCFFA9F6B1F2}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="BouncyCastle.Crypto.dll"/>
+    <ROW Component="BouncyCastle.Cryptography.dll_1" ComponentId="{4520B866-0756-424B-806D-1144225FDFBD}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="BouncyCastle.Cryptography.dll_1"/>
+    <ROW Component="C4FE6FD5B7C4D07B3A313E754A9A6A8" ComponentId="{C827B6E1-2605-4D85-AEFA-9FF29C6F7078}" Directory_="APPDIR" Attributes="260" KeyPath="C4FE6FD5B7C4D07B3A313E754A9A6A8" Options="2"/>
+    <ROW Component="Config" ComponentId="{64DE72D4-DBBD-412D-9E1A-8505654796DC}" Directory_="Config_Dir" Attributes="0"/>
+    <ROW Component="DataMigrationWizard.exe" ComponentId="{7C90400E-2703-4B5D-9E0D-2487A3B6DAE2}" Directory_="VistDb_Dir" Attributes="0" KeyPath="DataMigrationWizard.exe"/>
+    <ROW Component="DevComponents.DotNetBar2.dll_1" ComponentId="{6C75E07D-8DC7-4B79-AD11-D4614DD1C0D8}" Directory_="DotNetBar_Dir" Attributes="0" KeyPath="DevComponents.DotNetBar2.dll_1"/>
+    <ROW Component="DevComponents.TreeGX.dll_1" ComponentId="{7324E8A1-30BA-43E6-B536-78A1D462A379}" Directory_="DotNetBar_Dir" Attributes="0" KeyPath="DevComponents.TreeGX.dll_1"/>
+    <ROW Component="FarPoint.CalcEngine.dll_1" ComponentId="{F14684AC-158C-4E12-8057-1AAC9DE83905}" Directory_="Spread" Attributes="0" KeyPath="FarPoint.CalcEngine.dll_1"/>
+    <ROW Component="FarPoint.Excel.dll_1" ComponentId="{9336A6A7-4A53-4078-AD1F-F2ED10C65CAD}" Directory_="Spread" Attributes="0" KeyPath="FarPoint.Excel.dll_1"/>
+    <ROW Component="FarPoint.PluginCalendar.WinForms.dll_1" ComponentId="{BE99A866-92B4-4AB3-AF4A-DB181A3E6C10}" Directory_="Spread" Attributes="0" KeyPath="FarPoint.PluginCalendar.WinForms.dll_1"/>
+    <ROW Component="FarPoint.Win.Spread.dll_1" ComponentId="{2ABF94D5-7A42-441A-9813-F50E46E6A1C1}" Directory_="Spread" Attributes="0" KeyPath="FarPoint.Win.Spread.dll_1"/>
+    <ROW Component="FarPoint.Win.dll_1" ComponentId="{39AAD9EA-C9B3-43C7-B559-D218E710624A}" Directory_="Spread" Attributes="0" KeyPath="FarPoint.Win.dll_1"/>
+    <ROW Component="Finsoft.Licensing.dll" ComponentId="{D05405F1-8571-4997-9687-CC1F4EB0D024}" Directory_="APPDIR" Attributes="0" KeyPath="Finsoft.Licensing.dll"/>
+    <ROW Component="FontReg.exe" ComponentId="{DDC9E836-EAC1-4BEF-B138-2F1AEC759864}" Directory_="Fonts_Dir" Attributes="256" KeyPath="FontReg.exe"/>
+    <ROW Component="Fonts" ComponentId="{A7D9B897-C216-4145-85E0-4B574D5F6415}" Directory_="Fonts_Dir" Attributes="0"/>
+    <ROW Component="GemBox.Document.dll" ComponentId="{C9162C5C-D4CB-4FE1-AA9D-6C27E791E581}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="GemBox.Document.dll"/>
+    <ROW Component="GemBox.Spreadsheet.dll_1" ComponentId="{38F6A609-3B53-4291-AD2D-359A45E96C8C}" Directory_="GemBox_Dir" Attributes="0" KeyPath="GemBox.Spreadsheet.dll_1"/>
+    <ROW Component="GrapeCity.CalcEngine.dll_1" ComponentId="{12A453E3-D77A-4AD8-8796-499D3E8E3012}" Directory_="Spread" Attributes="0" KeyPath="GrapeCity.CalcEngine.dll_1"/>
+    <ROW Component="GrapeCity.Spreadsheet.Win.dll_1" ComponentId="{8444DCE7-1876-4099-BA01-E0B7FB4E261B}" Directory_="Spread" Attributes="0" KeyPath="GrapeCity.Spreadsheet.Win.dll_1"/>
+    <ROW Component="GrapeCity.Spreadsheet.dll_1" ComponentId="{6BA51F16-2E5D-483C-8528-E8E42F6122DC}" Directory_="Spread" Attributes="0" KeyPath="GrapeCity.Spreadsheet.dll_1"/>
+    <ROW Component="HarfBuzzSharp.dll" ComponentId="{444EC944-55E2-4CE3-9709-912B3E1B2599}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="HarfBuzzSharp.dll"/>
+    <ROW Component="HtmlAgilityPack.dll" ComponentId="{34E39F39-6FFC-4B47-B71C-35261283BD06}" Directory_="HTMLAgilityPack_Dir" Attributes="0" KeyPath="HtmlAgilityPack.dll"/>
+    <ROW Component="Latin1a.unicodeMap" ComponentId="{0A476D2F-8AD5-4871-81CD-93FD0E5323EE}" Directory_="APPDIR" Attributes="0" KeyPath="AssetReader.Main.exe.config" Type="0"/>
+    <ROW Component="License" ComponentId="{D0740086-BCC9-4ABE-9AB6-ACB30A42BA8C}" Directory_="License_Dir" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{A43FEF72-1B0C-412A-B732-770DD35C46F8}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="Reader.chm" ComponentId="{C20121B4-F52F-44EB-B989-0076691CB7AE}" Directory_="APPDIR" Attributes="0" KeyPath="Reader.chm" Type="1"/>
+    <ROW Component="Rebex.Common.dll" ComponentId="{6BBDAF0B-6DBD-4E58-ABEF-7048CDEF0867}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Common.dll"/>
+    <ROW Component="Rebex.Ews.dll" ComponentId="{21E675A5-BA8C-4307-BE0A-0B9A141016B5}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Ews.dll"/>
+    <ROW Component="Rebex.Ftp.dll" ComponentId="{8DA6D55B-B678-4298-9E68-85C3927567E4}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Ftp.dll"/>
+    <ROW Component="Rebex.Imap.dll" ComponentId="{F6F5C5B9-A5B9-4503-99A8-9D29900E1B72}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Imap.dll"/>
+    <ROW Component="Rebex.Mail.dll" ComponentId="{EB30ADDA-0441-4115-9655-F47BF2B47E46}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Mail.dll"/>
+    <ROW Component="Rebex.Networking.dll" ComponentId="{AFA7C554-88C2-457C-B020-A9B0E9B25F11}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Networking.dll"/>
+    <ROW Component="Rebex.Pop3.dll" ComponentId="{D82944C0-86C3-4F1C-9F75-8606FFB25E6D}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Pop3.dll"/>
+    <ROW Component="Rebex.Smtp.dll" ComponentId="{973C8A00-7416-4A74-BB7B-6EAB08BC195F}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Smtp.dll"/>
+    <ROW Component="Rebex.Zip.dll" ComponentId="{96E05D48-9BEA-43A1-913B-FC138BA2DAE6}" Directory_="Rebex_Dir" Attributes="0" KeyPath="Rebex.Zip.dll"/>
+    <ROW Component="Runtimes" ComponentId="{76B3F5BB-F140-4E59-AFEF-81F8D5F8BB41}" Directory_="Runtimes_Dir" Attributes="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{B7284B97-63ED-459B-9435-3E118F7FBA6B}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SQLite.Interop.dll_2" ComponentId="{740C626B-686D-49C5-812C-563B29647E2B}" Directory_="x64_1_Dir" Attributes="256" KeyPath="SQLite.Interop.dll_2"/>
+    <ROW Component="Sample2022.MDB" ComponentId="{D6B42505-8A3B-41F7-80A2-7D1231B07AC1}" Directory_="SampleDatabases_Dir" Attributes="0" KeyPath="Sample2024.AWD" Type="0"/>
+    <ROW Component="SkiaSharp.dll" ComponentId="{DC9E6406-3E32-4031-AAAD-26C72927EE22}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="SkiaSharp.dll"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{F60B51E4-A35F-4FE9-9C19-6DFBD32D26B7}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Data.SQLite.EF6.dll_2" ComponentId="{B006465F-44E5-4B22-9A8F-24EEB64F5E1B}" Directory_="SQLite_Dir" Attributes="0" KeyPath="System.Data.SQLite.EF6.dll_2"/>
+    <ROW Component="System.Data.SQLite.Linq.dll_2" ComponentId="{3816D886-A806-43D0-87AA-B561A0335AE6}" Directory_="SQLite_Dir" Attributes="0" KeyPath="System.Data.SQLite.Linq.dll_2"/>
+    <ROW Component="System.Data.SQLite.dll_2" ComponentId="{0C418C2E-43EF-4A0C-870E-80EB05A67284}" Directory_="SQLite_Dir" Attributes="0" KeyPath="System.Data.SQLite.dll_2"/>
+    <ROW Component="System.ValueTuple.dll" ComponentId="{5D3C129E-1FF5-41CC-A6FB-03A0BB79C48A}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="System.ValueTuple.dll"/>
+    <ROW Component="TXBarcode.Windows.Forms.dll" ComponentId="{6E77CB23-B2A5-4AB6-8EEB-DAFF0663F216}" Directory_="TX_Dir" Attributes="0" KeyPath="TXBarcode.Windows.Forms.dll"/>
+    <ROW Component="TXBarcode.Windows.Forms.xml" ComponentId="{795221D5-0F22-495F-AB27-BA5F84893F05}" Directory_="TX_Dir" Attributes="0" KeyPath="TXBarcode.Windows.Forms.xml" Type="0"/>
+    <ROW Component="TXBarcode.dll" ComponentId="{F93D337F-6F3A-43C0-A650-12F825FD9F2E}" Directory_="TX_Dir" Attributes="0" KeyPath="TXBarcode.dll"/>
+    <ROW Component="TXDocumentServer.Windows.Forms.Design.dll" ComponentId="{63662F2C-8F0D-4F01-81BF-794F52A590C4}" Directory_="TX_Dir" Attributes="0" KeyPath="TXDocumentServer.Windows.Forms.Design.dll"/>
+    <ROW Component="TXDocumentServer.Windows.Forms.dll" ComponentId="{56D95DFB-80F2-43F6-9CB0-618E88ED661C}" Directory_="TX_Dir" Attributes="0" KeyPath="TXDocumentServer.Windows.Forms.dll"/>
+    <ROW Component="TXDocumentServer.dll" ComponentId="{56938903-99B2-4484-B87F-748F1696623A}" Directory_="TX_Dir" Attributes="0" KeyPath="TXDocumentServer.dll"/>
+    <ROW Component="TXDrawing.Windows.Forms.dll" ComponentId="{67ABDF20-9A53-467D-A6E0-C6E37C8AE333}" Directory_="TX_Dir" Attributes="0" KeyPath="TXDrawing.Windows.Forms.dll"/>
+    <ROW Component="TXDrawing.dll" ComponentId="{3619A9FA-9104-46AD-AF2E-7F71CD336E0A}" Directory_="TX_Dir" Attributes="0" KeyPath="TXDrawing.dll"/>
+    <ROW Component="TXImageProvider.dll" ComponentId="{A0F34AA8-2849-4D47-A8C0-BB868CA7376F}" Directory_="TX_Dir" Attributes="0" KeyPath="TXImageProvider.dll"/>
+    <ROW Component="TXSVGGenerator.dll" ComponentId="{6631E320-DE6B-4112-9386-D098FDD0E7E1}" Directory_="TX_Dir" Attributes="0" KeyPath="TXSVGGenerator.dll"/>
+    <ROW Component="TXSpell.Windows.Forms.dll" ComponentId="{70E5014F-A3DD-4B43-845A-C9B40AE297EE}" Directory_="TXSpell_Dir" Attributes="0" KeyPath="TXSpell.Windows.Forms.dll"/>
+    <ROW Component="TXSpell.dll" ComponentId="{9C744B08-8A57-425C-9AC1-FCB0AB4D47E3}" Directory_="TXSpell_Dir" Attributes="0" KeyPath="TXSpell.dll"/>
+    <ROW Component="TXTextControl.Server.dll" ComponentId="{4C74EDB7-FD13-48FE-A946-AD175644FE9E}" Directory_="TX_Dir" Attributes="0" KeyPath="TXTextControl.Server.dll"/>
+    <ROW Component="TXTextControl.Windows.Forms.Design.dll" ComponentId="{CAD33D1F-B5A8-47A7-BDAA-E7C3AA82D1C8}" Directory_="TX_Dir" Attributes="0" KeyPath="TXTextControl.Windows.Forms.Design.dll"/>
+    <ROW Component="TXTextControl.Windows.Forms.dll" ComponentId="{F043009D-9CA6-444F-92B1-A0BBFA40B7E0}" Directory_="TX_Dir" Attributes="0" KeyPath="TXTextControl.Windows.Forms.dll"/>
+    <ROW Component="TXTextControl.dll" ComponentId="{4D5D9912-E166-4B86-8D84-F671D51EAFF4}" Directory_="TX_Dir" Attributes="0" KeyPath="TXTextControl.dll"/>
+    <ROW Component="TXWordStylesBasicArialFontNoBreaks.docx" ComponentId="{B0E01140-DD28-442D-B33A-372924E5F6E1}" Directory_="WPStyles_Dir" Attributes="0" KeyPath="TXWordStylesBasicArialFontNoBreaks.docx" Type="0"/>
+    <ROW Component="UACHelper.dll" ComponentId="{9C28D9E0-2AD2-4331-BE75-16D34AC4C8EB}" Directory_="UACHelper_Dir" Attributes="0" KeyPath="UACHelper.dll"/>
+    <ROW Component="VC_redist.x64.exe" ComponentId="{870B05C6-9481-48E7-9589-231C71616E56}" Directory_="Runtimes_Dir" Attributes="0" KeyPath="VC_redist.x64.exe"/>
+    <ROW Component="VistaDB.6.dll" ComponentId="{25F8D3A1-B028-41AC-97AE-82995F79ED8A}" Directory_="VistDb_Dir" Attributes="0" KeyPath="VistaDB.6.dll"/>
+    <ROW Component="WPStyles" ComponentId="{6C2577F6-2B23-46E7-A306-A12341DC2FC7}" Directory_="WPStyles_Dir" Attributes="0"/>
+    <ROW Component="WaitForm.dll" ComponentId="{BB9331E7-266D-4C36-8095-E45E8356952A}" Directory_="APPDIR" Attributes="0" KeyPath="WaitForm.dll"/>
+    <ROW Component="en_US.aff" ComponentId="{61187983-D379-40E7-99F7-B7C8E8DD3028}" Directory_="Dictionaries_Dir" Attributes="0" KeyPath="en_US.aff" Type="0"/>
+    <ROW Component="fontreg2.1.3redist.7z" ComponentId="{6F43AD5A-1D47-442B-99F7-709E462DDBFB}" Directory_="Fonts_Dir" Attributes="0" KeyPath="FontReg.md5" Type="0"/>
+    <ROW Component="hyph_en_US.dic" ComponentId="{E18150CE-B49A-47F0-BC3F-456A2200DD69}" Directory_="HyphenationLists_Dir" Attributes="0" KeyPath="hyph_en_US.dic" Type="0"/>
+    <ROW Component="th_en_US_v2.dat" ComponentId="{8015EE0C-5622-44E5-8D0E-E09C4E9CDB83}" Directory_="SynonymLists_Dir" Attributes="0" KeyPath="th_en_US_v2.dat" Type="0"/>
+    <ROW Component="tx32_css.dll_1" ComponentId="{DBDF7C87-673F-42A5-8576-795C7A0D2919}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_css.dll_1"/>
+    <ROW Component="tx32_doc.dll_1" ComponentId="{789E0ED9-127D-49BE-8039-09D7E98EF65D}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_doc.dll_1"/>
+    <ROW Component="tx32_dox.dll_1" ComponentId="{E7A242BE-BD9E-4193-B5E5-A88BAB7EE1E1}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_dox.dll_1"/>
+    <ROW Component="tx32_htm.dll_1" ComponentId="{F0B1F664-AD3B-42A9-8DED-4790FFE1BE72}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_htm.dll_1"/>
+    <ROW Component="tx32_pdf.dll_1" ComponentId="{60790AB4-70EF-4720-996F-E4C04F7B9462}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_pdf.dll_1"/>
+    <ROW Component="tx32_rtf.dll_1" ComponentId="{6189B76D-D928-458C-AE66-25F7ABC14B19}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_rtf.dll_1"/>
+    <ROW Component="tx32_xlx.dll_1" ComponentId="{500B6489-BC25-4543-9DC7-9A2089A94C9F}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_xlx.dll_1"/>
+    <ROW Component="tx32_xml.dll_1" ComponentId="{627753DD-C418-4A1B-B586-0B1B7219EDE1}" Directory_="__1_Dir" Attributes="256" KeyPath="tx32_xml.dll_1"/>
+    <ROW Component="txic.dll_1" ComponentId="{25D021BB-434A-4635-AE56-D975C3FAD0DA}" Directory_="__1_Dir" Attributes="256" KeyPath="txic.dll_1"/>
+    <ROW Component="txkernel.dll_1" ComponentId="{74AA3623-4600-48B5-B9C6-B3686951461B}" Directory_="__1_Dir" Attributes="256" KeyPath="txkernel.dll_1"/>
+    <ROW Component="txpdf.dll" ComponentId="{3E533B21-455E-4A5D-8DA5-56E1FD4C9820}" Directory_="TX_Dir" Attributes="0" KeyPath="txpdf.dll"/>
+    <ROW Component="txtools.dll_1" ComponentId="{51AA205A-E799-4F78-A329-39D820148115}" Directory_="__1_Dir" Attributes="256" KeyPath="txtools.dll_1"/>
+    <ROW Component="x64" ComponentId="{BF8438BF-8D8D-4349-B79D-FCBF86968D1F}" Directory_="x64_1_Dir" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8" Title="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Description="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Display="3" Level="1" Attributes="0"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="FarPoint.CalcEngine.dll_1" Component_="FarPoint.CalcEngine.dll_1" FileName="FARPOI~1.DLL|FarPoint.CalcEngine.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\FarPoint.CalcEngine.dll" SelfReg="false"/>
+    <ROW File="FarPoint.Excel.dll_1" Component_="FarPoint.Excel.dll_1" FileName="FARPOI~2.DLL|FarPoint.Excel.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\FarPoint.Excel.dll" SelfReg="false"/>
+    <ROW File="FarPoint.PluginCalendar.WinForms.dll_1" Component_="FarPoint.PluginCalendar.WinForms.dll_1" FileName="FARPOI~4.DLL|FarPoint.PluginCalendar.WinForms.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\FarPoint.PluginCalendar.WinForms.dll" SelfReg="false"/>
+    <ROW File="FarPoint.Win.dll_1" Component_="FarPoint.Win.dll_1" FileName="FARPOI~8.DLL|FarPoint.Win.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\FarPoint.Win.dll" SelfReg="false"/>
+    <ROW File="FarPoint.Win.Spread.dll_1" Component_="FarPoint.Win.Spread.dll_1" FileName="FARPO~11.DLL|FarPoint.Win.Spread.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\FarPoint.Win.Spread.dll" SelfReg="false"/>
+    <ROW File="GrapeCity.CalcEngine.dll_1" Component_="GrapeCity.CalcEngine.dll_1" FileName="GRAPEC~1.DLL|GrapeCity.CalcEngine.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.CalcEngine.dll" SelfReg="false"/>
+    <ROW File="GrapeCity.Spreadsheet.dll_1" Component_="GrapeCity.Spreadsheet.dll_1" FileName="GRAPEC~3.DLL|GrapeCity.Spreadsheet.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.Spreadsheet.dll" SelfReg="false"/>
+    <ROW File="GrapeCity.Spreadsheet.Win.dll_1" Component_="GrapeCity.Spreadsheet.Win.dll_1" FileName="GRAPEC~4.DLL|GrapeCity.Spreadsheet.Win.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.Spreadsheet.Win.dll" SelfReg="false"/>
+    <ROW File="GemBox.Spreadsheet.dll_1" Component_="GemBox.Spreadsheet.dll_1" FileName="GEMBOX~1.DLL|GemBox.Spreadsheet.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBox\GemBox.Spreadsheet.dll" SelfReg="false"/>
+    <ROW File="BouncyCastle.Crypto.dll" Component_="BouncyCastle.Crypto.dll" FileName="BOUNCY~1.DLL|BouncyCastle.Crypto.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxDoc\BouncyCastle.Crypto.dll" SelfReg="false"/>
+    <ROW File="BouncyCastle.Cryptography.dll_1" Component_="BouncyCastle.Cryptography.dll_1" FileName="BOUNCY~2.DLL|BouncyCastle.Cryptography.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxDoc\BouncyCastle.Cryptography.dll" SelfReg="false"/>
+    <ROW File="GemBox.Document.dll" Component_="GemBox.Document.dll" FileName="GEMBOX~1.DLL|GemBox.Document.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxDoc\GemBox.Document.dll" SelfReg="false"/>
+    <ROW File="DevComponents.DotNetBar2.dll_1" Component_="DevComponents.DotNetBar2.dll_1" FileName="DEVCOM~1.DLL|DevComponents.DotNetBar2.dll" Attributes="0" SourcePath="..\..\Assemblies\DotNetBar\DevComponents.DotNetBar2.dll" SelfReg="false"/>
+    <ROW File="DevComponents.TreeGX.dll_1" Component_="DevComponents.TreeGX.dll_1" FileName="DEVCOM~2.DLL|DevComponents.TreeGX.dll" Attributes="0" SourcePath="..\..\Assemblies\DotNetBar\DevComponents.TreeGX.dll" SelfReg="false"/>
+    <ROW File="Rebex.Common.dll" Component_="Rebex.Common.dll" FileName="REBEXC~1.DLL|Rebex.Common.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Common.dll" SelfReg="false"/>
+    <ROW File="Rebex.Ews.dll" Component_="Rebex.Ews.dll" FileName="REBEXE~1.DLL|Rebex.Ews.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Ews.dll" SelfReg="false"/>
+    <ROW File="Rebex.Ftp.dll" Component_="Rebex.Ftp.dll" FileName="REBEXF~1.DLL|Rebex.Ftp.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Ftp.dll" SelfReg="false"/>
+    <ROW File="Rebex.Imap.dll" Component_="Rebex.Imap.dll" FileName="REBEXI~1.DLL|Rebex.Imap.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Imap.dll" SelfReg="false"/>
+    <ROW File="Rebex.Mail.dll" Component_="Rebex.Mail.dll" FileName="REBEXM~1.DLL|Rebex.Mail.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Mail.dll" SelfReg="false"/>
+    <ROW File="Rebex.Networking.dll" Component_="Rebex.Networking.dll" FileName="REBEXN~1.DLL|Rebex.Networking.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Networking.dll" SelfReg="false"/>
+    <ROW File="Rebex.Pop3.dll" Component_="Rebex.Pop3.dll" FileName="REBEXP~1.DLL|Rebex.Pop3.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Pop3.dll" SelfReg="false"/>
+    <ROW File="Rebex.Smtp.dll" Component_="Rebex.Smtp.dll" FileName="REBEXS~1.DLL|Rebex.Smtp.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Smtp.dll" SelfReg="false"/>
+    <ROW File="Rebex.Zip.dll" Component_="Rebex.Zip.dll" FileName="REBEXZ~1.DLL|Rebex.Zip.dll" Attributes="0" SourcePath="..\..\Assemblies\Rebex\Rebex.Zip.dll" SelfReg="false"/>
+    <ROW File="AssetReader.Main.exe" Component_="AssetReader.Main.exe" FileName="ASSETW~3.EXE|AssetWriter.Main.exe" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter\ReleaseObfuscated\AssetWriter.Main.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="WaitForm.dll" Component_="WaitForm.dll" FileName="WaitForm.dll" Attributes="0" SourcePath="..\AssetReader\ReleaseObfuscated\WaitForm.dll" SelfReg="false" DigSign="true"/>
+    <ROW File="System.Data.SQLite.dll_2" Component_="System.Data.SQLite.dll_2" FileName="SYSTEM~1.DLL|System.Data.SQLite.dll" Attributes="0" SourcePath="..\..\Assemblies\SQLite\System.Data.SQLite.dll" SelfReg="false"/>
+    <ROW File="System.Data.SQLite.EF6.dll_2" Component_="System.Data.SQLite.EF6.dll_2" FileName="SYSTEM~2.DLL|System.Data.SQLite.EF6.dll" Attributes="0" SourcePath="..\..\Assemblies\SQLite\System.Data.SQLite.EF6.dll" SelfReg="false"/>
+    <ROW File="System.Data.SQLite.Linq.dll_2" Component_="System.Data.SQLite.Linq.dll_2" FileName="SYSTEM~3.DLL|System.Data.SQLite.Linq.dll" Attributes="0" SourcePath="..\..\Assemblies\SQLite\System.Data.SQLite.Linq.dll" SelfReg="false"/>
+    <ROW File="SQLite.Interop.dll_2" Component_="SQLite.Interop.dll_2" FileName="SQLITE~1.DLL|SQLite.Interop.dll" Attributes="0" SourcePath="..\..\Assemblies\SQLite\x64\SQLite.Interop.dll" SelfReg="false"/>
+    <ROW File="Reader.chm" Component_="Reader.chm" FileName="AW_HELP.chm" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\Help\AW_HELP.chm" SelfReg="false"/>
+    <ROW File="Finsoft.Licensing.dll" Component_="Finsoft.Licensing.dll" FileName="FINSOF~1.DLL|Finsoft.Licensing.dll" Attributes="0" SourcePath="..\..\Finsoft.Licensing\bin\Release\Finsoft.Licensing.dll" SelfReg="false" DigSign="true"/>
+    <ROW File="UACHelper.dll" Component_="UACHelper.dll" FileName="UACHEL~1.DLL|UACHelper.dll" Attributes="0" SourcePath="..\..\Assemblies\UACHelper\UACHelper.dll" SelfReg="false"/>
+    <ROW File="AssetReader.Main.exe.config" Component_="Latin1a.unicodeMap" FileName="ASSETW~2.CON|AssetWriter.Main.exe.config" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter\bin\Release\AssetWriter.Main.exe.config" SelfReg="false"/>
+    <ROW File="ABL_HLP.chm" Component_="ABL_HLP.chm" FileName="ABL_HLP.chm" Attributes="0" SourcePath="..\..\Assemblies\ABL\Pro\ABL_HLP.chm" SelfReg="false"/>
+    <ROW File="HarfBuzzSharp.dll" Component_="HarfBuzzSharp.dll" FileName="HARFBU~1.DLL|HarfBuzzSharp.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxCommonFramework\HarfBuzzSharp.dll" SelfReg="false"/>
+    <ROW File="SkiaSharp.dll" Component_="SkiaSharp.dll" FileName="SKIASH~1.DLL|SkiaSharp.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxCommonFramework\SkiaSharp.dll" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~1.DLL|System.Buffers.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxCommonFramework\System.Buffers.dll" SelfReg="false"/>
+    <ROW File="System.ValueTuple.dll" Component_="System.ValueTuple.dll" FileName="SYSTEM~2.DLL|System.ValueTuple.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBoxCommonFramework\System.ValueTuple.dll" SelfReg="false"/>
+    <ROW File="tx32_css.dll_1" Component_="tx32_css.dll_1" FileName="tx32_css.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_css.dll" SelfReg="false"/>
+    <ROW File="tx32_doc.dll_1" Component_="tx32_doc.dll_1" FileName="tx32_doc.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_doc.dll" SelfReg="false"/>
+    <ROW File="tx32_dox.dll_1" Component_="tx32_dox.dll_1" FileName="tx32_dox.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_dox.dll" SelfReg="false"/>
+    <ROW File="tx32_htm.dll_1" Component_="tx32_htm.dll_1" FileName="tx32_htm.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_htm.dll" SelfReg="false"/>
+    <ROW File="tx32_pdf.dll_1" Component_="tx32_pdf.dll_1" FileName="tx32_pdf.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_pdf.dll" SelfReg="false"/>
+    <ROW File="tx32_rtf.dll_1" Component_="tx32_rtf.dll_1" FileName="tx32_rtf.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_rtf.dll" SelfReg="false"/>
+    <ROW File="tx32_xlx.dll_1" Component_="tx32_xlx.dll_1" FileName="tx32_xlx.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_xlx.dll" SelfReg="false"/>
+    <ROW File="tx32_xml.dll_1" Component_="tx32_xml.dll_1" FileName="tx32_xml.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\tx32_xml.dll" SelfReg="false"/>
+    <ROW File="txic.dll_1" Component_="txic.dll_1" FileName="txic.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\txic.dll" SelfReg="false"/>
+    <ROW File="txkernel.dll_1" Component_="txkernel.dll_1" FileName="txkernel.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\txkernel.dll" SelfReg="false"/>
+    <ROW File="txtools.dll_1" Component_="txtools.dll_1" FileName="txtools.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\64\txtools.dll" SelfReg="false"/>
+    <ROW File="TXBarcode.dll" Component_="TXBarcode.dll" FileName="TXBARC~1.DLL|TXBarcode.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXBarcode.dll" SelfReg="false"/>
+    <ROW File="TXBarcode.Windows.Forms.dll" Component_="TXBarcode.Windows.Forms.dll" FileName="TXBARC~2.DLL|TXBarcode.Windows.Forms.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXBarcode.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="TXBarcode.Windows.Forms.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXBARC~1.XML|TXBarcode.Windows.Forms.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXBarcode.Windows.Forms.xml" SelfReg="false"/>
+    <ROW File="TXBarcode.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXBARC~2.XML|TXBarcode.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXBarcode.xml" SelfReg="false"/>
+    <ROW File="TXDocumentServer.dll" Component_="TXDocumentServer.dll" FileName="TXDOCU~1.DLL|TXDocumentServer.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDocumentServer.dll" SelfReg="false"/>
+    <ROW File="TXDocumentServer.Windows.Forms.Design.dll" Component_="TXDocumentServer.Windows.Forms.Design.dll" FileName="TXDOCU~2.DLL|TXDocumentServer.Windows.Forms.Design.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDocumentServer.Windows.Forms.Design.dll" SelfReg="false"/>
+    <ROW File="TXDocumentServer.Windows.Forms.dll" Component_="TXDocumentServer.Windows.Forms.dll" FileName="TXDOCU~3.DLL|TXDocumentServer.Windows.Forms.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDocumentServer.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="TXDocumentServer.Windows.Forms.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXDOCU~1.XML|TXDocumentServer.Windows.Forms.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDocumentServer.Windows.Forms.xml" SelfReg="false"/>
+    <ROW File="TXDocumentServer.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXDOCU~2.XML|TXDocumentServer.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDocumentServer.xml" SelfReg="false"/>
+    <ROW File="TXDrawing.dll" Component_="TXDrawing.dll" FileName="TXDRAW~1.DLL|TXDrawing.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDrawing.dll" SelfReg="false"/>
+    <ROW File="TXDrawing.Windows.Forms.dll" Component_="TXDrawing.Windows.Forms.dll" FileName="TXDRAW~2.DLL|TXDrawing.Windows.Forms.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDrawing.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="TXDrawing.Windows.Forms.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXDRAW~1.XML|TXDrawing.Windows.Forms.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDrawing.Windows.Forms.xml" SelfReg="false"/>
+    <ROW File="TXDrawing.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXDRAW~2.XML|TXDrawing.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXDrawing.xml" SelfReg="false"/>
+    <ROW File="TXImageProvider.dll" Component_="TXImageProvider.dll" FileName="TXIMAG~1.DLL|TXImageProvider.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXImageProvider.dll" SelfReg="false"/>
+    <ROW File="txpdf.dll" Component_="txpdf.dll" FileName="txpdf.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\txpdf.dll" SelfReg="false"/>
+    <ROW File="TXSVGGenerator.dll" Component_="TXSVGGenerator.dll" FileName="TXSVGG~1.DLL|TXSVGGenerator.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXSVGGenerator.dll" SelfReg="false"/>
+    <ROW File="TXTextControl.dll" Component_="TXTextControl.dll" FileName="TXTEXT~1.DLL|TXTextControl.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.dll" SelfReg="false"/>
+    <ROW File="TXTextControl.Server.dll" Component_="TXTextControl.Server.dll" FileName="TXTEXT~2.DLL|TXTextControl.Server.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.Server.dll" SelfReg="false"/>
+    <ROW File="TXTextControl.Server.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXTEXT~1.XML|TXTextControl.Server.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.Server.xml" SelfReg="false"/>
+    <ROW File="TXTextControl.Windows.Forms.Design.dll" Component_="TXTextControl.Windows.Forms.Design.dll" FileName="TXTEXT~3.DLL|TXTextControl.Windows.Forms.Design.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.Windows.Forms.Design.dll" SelfReg="false"/>
+    <ROW File="TXTextControl.Windows.Forms.dll" Component_="TXTextControl.Windows.Forms.dll" FileName="TXTEXT~4.DLL|TXTextControl.Windows.Forms.dll" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="TXTextControl.Windows.Forms.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXTEXT~2.XML|TXTextControl.Windows.Forms.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.Windows.Forms.xml" SelfReg="false"/>
+    <ROW File="TXTextControl.xml" Component_="TXBarcode.Windows.Forms.xml" FileName="TXTEXT~3.XML|TXTextControl.xml" Attributes="0" SourcePath="..\..\Assemblies\TX\TXTextControl.xml" SelfReg="false"/>
+    <ROW File="en_US.aff" Component_="en_US.aff" FileName="en_US.aff" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\Dictionaries\en_US.aff" SelfReg="false"/>
+    <ROW File="en_US.dic" Component_="en_US.aff" FileName="en_US.dic" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\Dictionaries\en_US.dic" SelfReg="false"/>
+    <ROW File="README_en_US.txt" Component_="en_US.aff" FileName="README~1.TXT|README_en_US.txt" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\Dictionaries\README_en_US.txt" SelfReg="false"/>
+    <ROW File="hyph_en_US.dic" Component_="hyph_en_US.dic" FileName="HYPH_E~1.DIC|hyph_en_US.dic" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\HyphenationLists\hyph_en_US.dic" SelfReg="false"/>
+    <ROW File="th_en_US_v2.dat" Component_="th_en_US_v2.dat" FileName="TH_EN_~1.DAT|th_en_US_v2.dat" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\SynonymLists\th_en_US_v2.dat" SelfReg="false"/>
+    <ROW File="th_en_US_v2.idx" Component_="th_en_US_v2.dat" FileName="TH_EN_~1.IDX|th_en_US_v2.idx" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\SynonymLists\th_en_US_v2.idx" SelfReg="false"/>
+    <ROW File="TXSpell.dll" Component_="TXSpell.dll" FileName="TXSpell.dll" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\TXSpell.dll" SelfReg="false"/>
+    <ROW File="TXSpell.Windows.Forms.dll" Component_="TXSpell.Windows.Forms.dll" FileName="TXSPEL~1.DLL|TXSpell.Windows.Forms.dll" Attributes="0" SourcePath="..\..\Assemblies\TXSPELL\TXSpell.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="HtmlAgilityPack.dll" Component_="HtmlAgilityPack.dll" FileName="HTMLAG~1.DLL|HtmlAgilityPack.dll" Attributes="0" SourcePath="..\..\Assemblies\HtmlAgility\HtmlAgilityPack.dll" SelfReg="false"/>
+    <ROW File="VistaDB.6.dll" Component_="VistaDB.6.dll" FileName="VISTAD~1.DLL|VistaDB.6.dll" Attributes="0" SourcePath="..\..\Assemblies\VistaDB\VistaDB.6.dll" SelfReg="false"/>
+    <ROW File="DataMigrationWizard.exe" Component_="DataMigrationWizard.exe" FileName="DATAMI~1.EXE|DataMigrationWizard.exe" Attributes="0" SourcePath="..\..\Assemblies\VistaDB\DataMigrationWizard.exe" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicArialFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~1.DOC|TXWordStyles-Basic-ArialFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-ArialFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicArialFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~2.DOC|TXWordStyles-Basic-ArialFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-ArialFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicTahomaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~3.DOC|TXWordStyles-Basic-TahomaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-TahomaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicTahomaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~4.DOC|TXWordStyles-Basic-TahomaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-TahomaFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicTimesNewRomanFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~5.DOC|TXWordStyles-Basic-TimesNewRomanFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-TimesNewRomanFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicTimesNewRomanFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~6.DOC|TXWordStyles-Basic-TimesNewRomanFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-TimesNewRomanFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicVerdanaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~7.DOC|TXWordStyles-Basic-VerdanaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-VerdanaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesBasicVerdanaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~8.DOC|TXWordStyles-Basic-VerdanaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-Basic-VerdanaFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1ArialFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWORD~9.DOC|TXWordStyles-OutlineHeader1-ArialFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-ArialFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1ArialFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~10.DOC|TXWordStyles-OutlineHeader1-ArialFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-ArialFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1TahomaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~11.DOC|TXWordStyles-OutlineHeader1-TahomaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-TahomaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1TahomaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~12.DOC|TXWordStyles-OutlineHeader1-TahomaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-TahomaFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1TimesNewRomanFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~13.DOC|TXWordStyles-OutlineHeader1-TimesNewRomanFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-TimesNewRomanFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1TimesNewRomanFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~14.DOC|TXWordStyles-OutlineHeader1-TimesNewRomanFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-TimesNewRomanFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1VerdanaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~15.DOC|TXWordStyles-OutlineHeader1-VerdanaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-VerdanaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesOutlineHeader1VerdanaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~16.DOC|TXWordStyles-OutlineHeader1-VerdanaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-OutlineHeader1-VerdanaFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1ArialFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~17.DOC|TXWordStyles-UnderlinedHeader1-ArialFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-ArialFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1ArialFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~18.DOC|TXWordStyles-UnderlinedHeader1-ArialFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-ArialFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1TahomaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~19.DOC|TXWordStyles-UnderlinedHeader1-TahomaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-TahomaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1TahomaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~20.DOC|TXWordStyles-UnderlinedHeader1-TahomaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-TahomaFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1TimesNewRomanFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~21.DOC|TXWordStyles-UnderlinedHeader1-TimesNewRomanFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-TimesNewRomanFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1TimesNewRomanFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~22.DOC|TXWordStyles-UnderlinedHeader1-TimesNewRomanFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-TimesNewRomanFont.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1VerdanaFontNoBreaks.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~23.DOC|TXWordStyles-UnderlinedHeader1-VerdanaFont-NoBreaks.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-VerdanaFont-NoBreaks.docx" SelfReg="false"/>
+    <ROW File="TXWordStylesUnderlinedHeader1VerdanaFont.docx" Component_="TXWordStylesBasicArialFontNoBreaks.docx" FileName="TXWOR~24.DOC|TXWordStyles-UnderlinedHeader1-VerdanaFont.docx" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\WPStyles\TXWordStyles-UnderlinedHeader1-VerdanaFont.docx" SelfReg="false"/>
+    <ROW File="Sample2024.AWD" Component_="Sample2022.MDB" FileName="SAMPLE~1.AWD|Sample2024.AWD" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\Samples\Sample2024.AWD" SelfReg="false"/>
+    <ROW File="Sample2024_No_Currency.AWD" Component_="Sample2022.MDB" FileName="SAMPLE~2.AWD|Sample2024_No_Currency.AWD" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\Samples\Sample2024_No_Currency.AWD" SelfReg="false"/>
+    <ROW File="AssetWriter.Utilities.exe" Component_="AssetWriter.Utilities.exe" FileName="ASSETW~2.EXE|AssetWriter.Utilities.exe" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter\ReleaseObfuscated\AssetWriter.Utilities.exe" SelfReg="false"/>
+    <ROW File="ARIAL.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIAL.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIAL.TTF" SelfReg="false"/>
+    <ROW File="ARIALBD.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALBD.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALBD.TTF" SelfReg="false"/>
+    <ROW File="ARIALBI.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALBI.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALBI.TTF" SelfReg="false"/>
+    <ROW File="ARIALI.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALI.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALI.TTF" SelfReg="false"/>
+    <ROW File="ARIALN.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALN.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALN.TTF" SelfReg="false"/>
+    <ROW File="ARIALNB.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALNB.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALNB.TTF" SelfReg="false"/>
+    <ROW File="ARIALNBI.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALNBI.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALNBI.TTF" SelfReg="false"/>
+    <ROW File="ARIALNI.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIALNI.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIALNI.TTF" SelfReg="false"/>
+    <ROW File="ARIBLK.TTF" Component_="fontreg2.1.3redist.7z" FileName="ARIBLK.TTF" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\ARIBLK.TTF" SelfReg="false"/>
+    <ROW File="FontReg.exe" Component_="FontReg.exe" FileName="FontReg.exe" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\FontReg.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="FontReg.md5" Component_="fontreg2.1.3redist.7z" FileName="FontReg.md5" Attributes="0" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font\FontReg.md5" SelfReg="false"/>
+    <ROW File="VC_redist.x64.exe" Component_="VC_redist.x64.exe" FileName="VC_RED~1.EXE|VC_redist.x64.exe" Attributes="0" SourcePath="..\..\RunTimes\CPLUS2022\VC_redist.x64.exe" SelfReg="false"/>
+    <ROW File="AWL.lic" Component_="AWL.lic" FileName="AWL.lic" Attributes="0" SourcePath="..\..\AssetWriter.Assemblies\License\AWL.lic" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiPersistentPropComponent">
+    <ROW Property="AI_INSTALLPERUSER" Registry="AI_INSTALLPERUSER" HklmSearch="AI_INSTALLPERUSER" HkcuSearch="AI_INSTALLPERUSER_1" Hklm64Search="AI_INSTALLPERUSER_2" Hkcu64Search="AI_INSTALLPERUSER_3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="252"/>
+    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="251"/>
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+    <ROW Action="AI_DownloadPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="695"/>
+    <ROW Action="AI_ExtractPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="696"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="697"/>
+    <ROW Action="AI_VerifyPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="698"/>
+    <ROW Action="AI_CleanPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="699"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="Production" BuildOrder="1" BuildType="0" PackageFolder="..\..\AssetWriter.Setup\Release" PackageFileName="AssetWriter" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW DigitalCertificate="..\..\Certificates\CodeSign\2024\Finsoft2023.cer" TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" DescriptionUrl="https://www.finsoft.net/" SignOptions="7" SignTool="0" UseSha256="1" Subject="CN=Finsoft, O=Finsoft, S=Maryland, C=US" CryptoProvider="eToken Base Cryptographic Provider" CryptoContainer="Sectigo_20231129122400"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\InstallDlg.aip"/>
+    <ROW Fragment="InstallTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\InstallTypeDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="PrerequisitesDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PrerequisitesDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_ConfigureChainer" Description="Configuring prerequisites launcher" DescriptionLocId="ActionText.Description.AI_ConfigureChainer" Template="Configure Launcher" TemplateLocId="ActionText.Template.AI_ConfigureChainer"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrePrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrePrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+    <ROW Action="AI_XmlCommit" Description="Committing XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlCommit" Template="Committing XML file configurations." TemplateLocId="ActionText.Template.AI_XmlCommit"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" DescriptionLocId="ActionText.Description.AI_XmlConfig" Template="Configuring XML file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlLocator" Description="Executing XML locators" DescriptionLocId="ActionText.Description.AI_XmlLocator" Template="Executing XML file: &quot;[1]&quot; locators" TemplateLocId="ActionText.Template.AI_XmlLocator"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" DescriptionLocId="ActionText.Description.AI_XmlRemove" Template="Configuring XML file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" Template="Rolling back XML file configurations." TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_INSTALLPERUSER" Signature_="AI_INSTALLPERUSER"/>
+    <ROW Property="AI_INSTALLPERUSER" Signature_="AI_INSTALLPERUSER_1"/>
+    <ROW Property="AI_INSTALLPERUSER" Signature_="AI_INSTALLPERUSER_2"/>
+    <ROW Property="AI_INSTALLPERUSER" Signature_="AI_INSTALLPERUSER_3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="aipackagechainer.exe" SourcePath="&lt;AI_CUSTACTS&gt;aipackagechainer.exe" DigSign="true"/>
+    <ROW Name="file_deleter.ps1" SourcePath="&lt;AI_SCRIPTS&gt;file_deleter.ps1"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;AI_CUSTACTS&gt;viewer.exe" DigSign="true"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCheckBoxComponent">
+    <ROW Property="DIROVERRIDES_PROP" Value="CheckBox"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="DirectoryDlg" Control="Next" Type="PushButton" X="235" Y="366" Width="56" Height="17" Attributes="3" Text="[ButtonText_Next]" Order="100" TextLocId="-" Options="1"/>
+    <ROW Dialog_="DirectoryDlg" Control="Cancel" Type="PushButton" X="303" Y="366" Width="56" Height="17" Attributes="3" Text="[ButtonText_Cancel]" Order="200" TextLocId="-" Options="1"/>
+    <ROW Dialog_="DirectoryDlg" Control="Back" Type="PushButton" X="179" Y="366" Width="56" Height="17" Attributes="3" Text="[ButtonText_Back]" Order="300" TextLocId="-" Options="1"/>
+    <ROW Dialog_="DirectoryDlg" Control="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" Attributes="1048577" Text="[BannerBitmap]" Order="400"/>
+    <ROW Dialog_="DirectoryDlg" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Order="500"/>
+    <ROW Dialog_="DirectoryDlg" Control="BottomLine" Type="Line" X="4" Y="357" Width="365" Height="2" Attributes="1" Order="600"/>
+    <ROW Dialog_="DirectoryDlg" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Attributes="196611" Text="Override Application Directories" Order="700"/>
+    <ROW Dialog_="DirectoryDlg" Control="Logo" Type="Text" X="3" Y="351" Width="101" Height="12" Attributes="1" Text="[ProductName]  [ProductVersion] " Order="800"/>
+    <ROW Dialog_="DirectoryDlg" Control="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Attributes="196611" Text="Directory Overrides - ADVANCED" TextStyle="[DlgTitleFont]" Order="900"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_1" Type="Text" X="24" Y="54" Width="320" Height="21" Attributes="65539" Property="TEXT_1_PROP_1" Text="Only enter application directories below if instructed by your administrator." TextStyle="DlgFontBold8" Order="1000"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_2" Type="Text" X="24" Y="79" Width="320" Height="21" Attributes="65539" Property="TEXT_1_PROP_1_1" Text="When blank, the application will properly default the directory to the correct location under your userid profile on your machine." Order="1100"/>
+    <ROW Dialog_="DirectoryDlg" Control="TextBox_DirExport" Type="PathEdit" X="25" Y="269" Width="325" Height="18" Attributes="1" Property="DIREXPORT" Text="{260}" Order="1200"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_4" Type="Text" X="25" Y="257" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP_3" Text="Export Directory:" Order="1300"/>
+    <ROW Dialog_="DirectoryDlg" Control="TextBox_DirSecurity" Type="PathEdit" X="25" Y="146" Width="325" Height="18" Attributes="1" Property="DIRSECURITY" Text="{260}" Order="1400"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_5" Type="Text" X="25" Y="133" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP_4" Text="License Directory:" Order="1500"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_6" Type="Text" X="24" Y="111" Width="320" Height="16" Attributes="65539" Property="TEXT_1_PROP_1_1_1" Text="Enter only the directories you wish to override, leave the others blank." Order="1600"/>
+    <ROW Dialog_="DirectoryDlg" Control="DirSecurityBrowseButton" Type="PushButton" X="289" Y="127" Width="62" Height="18" Attributes="3" Text="[ButtonText_Browse]" TextStyle="DlgFont8" Help="|" Order="1700" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="DirectoryDlg" Control="DirExportBrowseButton" Type="PushButton" X="289" Y="250" Width="62" Height="18" Attributes="3" Text="[ButtonText_Browse]" TextStyle="DlgFont8" Help="|" Order="1800" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="DirectoryDlg" Control="TextBox_DirExam" Type="PathEdit" X="25" Y="187" Width="325" Height="18" Attributes="1" Property="DIREXAM" Text="{260}" Order="1900"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_3" Type="Text" X="25" Y="175" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP_3_1" Text="Exams Directory:" Order="2000"/>
+    <ROW Dialog_="DirectoryDlg" Control="DirExamBrowseButton" Type="PushButton" X="289" Y="168" Width="62" Height="18" Attributes="3" Text="[ButtonText_Browse]" TextStyle="DlgFontBold8_DlgFontBold8" Help="|" Order="2100" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="DirectoryDlg" Control="TextBox_DirTemplate" Type="PathEdit" X="25" Y="228" Width="325" Height="18" Attributes="1" Property="DIRTEMPLATE" Text="{260}" Order="2200"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_7" Type="Text" X="25" Y="216" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP_3_2" Text="Template Directory:" Order="2300"/>
+    <ROW Dialog_="DirectoryDlg" Control="DirTemplateBrowseButton" Type="PushButton" X="289" Y="209" Width="62" Height="18" Attributes="3" Text="[ButtonText_Browse]" TextStyle="DlgFontBold8_DlgFontBold8" Help="|" Order="2400" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="DirectoryDlg" Control="TextBox_DirBackup" Type="PathEdit" X="25" Y="310" Width="325" Height="18" Attributes="1" Property="DIRBACKUP" Text="{260}" Order="2500"/>
+    <ROW Dialog_="DirectoryDlg" Control="Text_8" Type="Text" X="25" Y="298" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP_3_3" Text="Backup Directory:" Order="2600"/>
+    <ROW Dialog_="DirectoryDlg" Control="DirBackupBrowseButton" Type="PushButton" X="289" Y="291" Width="62" Height="18" Attributes="3" Text="[ButtonText_Browse]" TextStyle="DlgFontBold8_DlgFontBold8" Help="|" Order="2700" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="InstallDlg" Control="CheckBox" Type="CheckBox" X="18" Y="194" Width="197" Height="11" Attributes="3" Property="IAgreeInstall" Text="I agree to the License terms and conditions." Order="100" TextLocId="Metro.Control.Text.WelcomeDlg.AgreeToLicense" MsiKey="InstallDlg#CheckBox"/>
+    <ROW Dialog_="InstallDlg" Control="FolderEdit" Type="PathEdit" X="18" Y="109" Width="333" Height="28" Attributes="7" Property="APPDIR" Help="|" Order="500" HelpLocId="Control.Help.FolderDlg#FolderEdit" MsiKey="InstallDlg#FolderEdit"/>
+    <ROW Dialog_="InstallDlg" Control="Browse" Type="PushButton" X="282" Y="89" Width="69" Height="18" Attributes="3" Text="[ButtonText_Browse]" Help="|" Order="600" TextLocId="-" HelpLocId="Control.Help.FolderDlg#Browse" MsiKey="InstallDlg#Browse"/>
+    <ROW Dialog_="InstallDlg" Control="Hyperlink" Type="Hyperlink" X="18" Y="158" Width="340" Height="22" Attributes="65539" Property="AiLicenseAgreementLink" Text="You must agree to the &lt;a href=&quot;[AiLicenseAgreementLink]&quot;&gt;Licenses terms and conditions&lt;/a&gt; before you can install [ProductName]." Order="700" TextLocId="Metro.Control.Text.WelcomeDlg#YouMustAgreeCtrl" MsiKey="InstallDlg#Hyperlink"/>
+    <ROW Dialog_="InstallDlg" Control="Logo" Type="Text" X="4" Y="228" Width="103" Height="12" Attributes="1" Text="[ProductName]  [ProductVersion] " Order="900" MsiKey="InstallDlg#Logo"/>
+    <ROW Dialog_="InstallDlg" Control="Text" Type="Text" X="18" Y="61" Width="320" Height="22" Attributes="3" Text="[ProductName] will be installed on your computer. To install to a different location, enter it below or click &quot;Browse&quot;." Order="1200" TextLocId="Control.Text.FolderDlg#TextNoNext" MsiKey="InstallDlg#Text"/>
+    <ROW Dialog_="InstallDlg" Control="CheckBox_DirOverrides" Type="CheckBox" X="256" Y="141" Width="98" Height="13" Attributes="3" Property="DIROVERRIDES_PROP" Text="Advanced Install (IT)" TextStyle="DlgFont8" Order="1400"/>
+    <ROW Dialog_="InstallTypeDlg" Control="Logo" Type="Text" X="4" Y="228" Width="108" Height="12" Attributes="1" Text="[ProductName]  [ProductVersion] " Order="800" MsiKey="InstallTypeDlg#Logo"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="SpawnDialog" Control="Yes" Type="PushButton" X="72" Y="57" Width="56" Height="17" Attributes="3" Text="[ButtonText_Yes]" Order="100" TextLocId="-"/>
+    <ROW Dialog_="SpawnDialog" Control="Icon" Type="Icon" X="15" Y="15" Width="24" Height="24" Attributes="5242881" Text="[InfoIcon]" Order="200"/>
+    <ROW Dialog_="SpawnDialog" Control="Text" Type="Text" X="48" Y="15" Width="194" Height="30" Attributes="3" Text="New Spawn(Wait) Dialog" Order="300"/>
+    <ROW Dialog_="SpawnDialog" Control="No" Type="PushButton" X="132" Y="57" Width="56" Height="17" Attributes="3" Text="[ButtonText_No]" Order="400" TextLocId="-"/>
+    <ROW Dialog_="WelcomeDlg" Control="Logo" Type="Text" X="8" Y="247" Width="108" Height="12" Attributes="1" Text="[ProductName]  [ProductVersion] " Order="800"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="InstallTypeDlg" Condition="AI_INSTALL" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="DirectoryDlg" Condition="AI_INSTALL AND ( DIROVERRIDES_PROP = &quot;CheckBox&quot; )" Ordering="202"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="203"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="204"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="NewDialog" Argument="DirectoryDlg" Condition="AI_INSTALL AND ( DIROVERRIDES_PROP = &quot;CheckBox&quot; )" Ordering="202"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="NewDialog" Argument="InstallTypeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="InstallDlg" Control_="Hyperlink" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="201"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="DirectoryDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="1"/>
+    <ROW Dialog_="InstallTypeDlg" Control_="Next" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL" Ordering="101"/>
+    <ROW Dialog_="InstallTypeDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="DirectoryDlg" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
+    <ROW Dialog_="DirectoryDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="2"/>
+    <ROW Dialog_="DirectoryDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="DirectoryDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND ( DIROVERRIDES_PROP = &quot;&quot; )" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND ( DIROVERRIDES_PROP = &quot;&quot; )" Ordering="201"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirSecurityBrowseButton" Event="[_BrowseProperty]" Argument="DIRSECURITY" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirSecurityBrowseButton" Event="SpawnDialog" Argument="BrowseDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirExportBrowseButton" Event="[_BrowseProperty]" Argument="DIREXPORT" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirExportBrowseButton" Event="SpawnDialog" Argument="BrowseDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[DIROVERRIDES_PROP]" Argument="{}" Condition="AI_INSTALL AND ( (DIRIMPORT = &quot; &quot; OR DIRIMPORT = &quot;&quot;) AND (DIREXPORT = &quot; &quot; OR DIREXPORT = &quot;&quot;) AND (DIRFILES = &quot; &quot; OR DIRFILES = &quot;&quot;) AND (DIRSECURITY = &quot; &quot; OR DIRSECURITY = &quot;&quot;) )" Ordering="203"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[DIROVERRIDES_PROP]" Argument="CheckBox" Condition="AI_INSTALL" Ordering="202"/>
+    <ROW Dialog_="SpawnDialog" Control_="No" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+    <ROW Dialog_="SpawnDialog" Control_="Yes" Event="EndDialog" Argument="Return" Condition="1" Ordering="100"/>
+    <ROW Dialog_="InstallTypeDlg" Control_="TemplateDlgDialogInitializer" Event="[AI_INSTALLPERUSER]" Argument="0" Condition="(AI_INSTALLPERUSER=&quot;2&quot;) AND (AI_DETECTED_ADMIN_USER&lt;&gt;&quot;1&quot;)" Ordering="101" MsiKey="InstallTypeDlg#TemplateDlgDialogInitializer#[AI_INSTALLPERUSER]#1#(AI_INSTALLPERUSER=&quot;2&quot;) AND (AI_DETECTED_ADMIN_USER&lt;&gt;&quot;1&quot;)"/>
+    <ROW Dialog_="InstallTypeDlg" Control_="TemplateDlgDialogInitializer" Event="[AI_INSTALLPERUSER]" Argument="0" Condition="AI_INSTALL" Ordering="102"/>
+    <ROW Dialog_="InstallTypeDlg" Control_="Next" Event="[APPDIR]" Argument="[LocalAppDataFolder][Manufacturer]\[ProductName]" Condition="AI_INSTALL AND ( AI_INSTALLPERUSER = &quot;1&quot; )" Ordering="102"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_RollbackPrereq" Condition="1" Ordering="102"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="301"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="103"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="101"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_RollbackPrePrereq" Condition="1" Ordering="104"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="302"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="105"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="102"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirExamBrowseButton" Event="[_BrowseProperty]" Argument="DIREXAM" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirExamBrowseButton" Event="SpawnDialog" Argument="BrowseDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirTemplateBrowseButton" Event="[_BrowseProperty]" Argument="DIRTEMPLATE" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirTemplateBrowseButton" Event="SpawnDialog" Argument="BrowseDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirBackupBrowseButton" Event="[_BrowseProperty]" Argument="DIRBACKUP" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="DirectoryDlg" Control_="DirBackupBrowseButton" Event="SpawnDialog" Argument="BrowseDlg" Condition="AI_INSTALL" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+    <ROW Directory_="x64_1_Dir" Component_="x64" ManualDelete="true"/>
+    <ROW Directory_="Runtimes_Dir" Component_="Runtimes" ManualDelete="true"/>
+    <ROW Directory_="License_Dir" Component_="License" ManualDelete="true"/>
+    <ROW Directory_="Config_Dir" Component_="Config" ManualDelete="false"/>
+    <ROW Directory_="Fonts_Dir" Component_="Fonts" ManualDelete="true"/>
+    <ROW Directory_="WPStyles_Dir" Component_="WPStyles" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_AuthorSinglePackage" Type="1" Source="aicustact.dll" Target="AI_AuthorSinglePackage" WithoutSeq="true"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_CleanPrePrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_ConfigureChainer" Type="1" Source="Prereq.dll" Target="ConfigurePrereqLauncher"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrePrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrePrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="LaunchApp"/>
+    <ROW Action="AI_LaunchChainer" Type="3314" Source="AI_PREREQ_CHAINER"/>
+    <ROW Action="AI_MigrateInstallerProps" Type="1" Source="aicustact.dll" Target="MigrateInstallerProps"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RestartElevated" Type="1" Source="aicustact.dll" Target="RestartElevated"/>
+    <ROW Action="AI_RestoreInstallerProps" Type="1" Source="aicustact.dll" Target="RestoreInstallerProps" WithoutSeq="true"/>
+    <ROW Action="AI_RollbackPrePrereq" Type="65" Source="Prereq.dll" Target="RollbackPrePrereq" WithoutSeq="true"/>
+    <ROW Action="AI_RollbackPrereq" Type="65" Source="Prereq.dll" Target="RollbackPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_VerifyPrePrereq" Type="1" Source="Prereq.dll" Target="VerifyPrePrereq"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="AI_XmlCommit" Type="11777" Source="xmlCfg.dll" Target="OnXmlCommit" WithoutSeq="true"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_XmlLocator" Type="257" Source="xmlCfg.dll" Target="OnXmlLocator"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="DirectoryDlg" HCentering="50" VCentering="50" Width="370" Height="389" Attributes="3" Title="[ProductName] [Setup]" Control_Default="Next" Control_Cancel="Cancel"/>
+    <ROW Dialog="SpawnDialog" HCentering="50" VCentering="50" Width="260" Height="85" Attributes="3" Title="[ProductName] [Setup]" Control_Default="Yes" Control_Cancel="No"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="AssetReader.Main.exe"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Common.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Ews.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Ftp.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Imap.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Mail.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Networking.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Pop3.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Smtp.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rebex.Zip.dll"/>
+    <ROW Feature_="MainFeature" Component_="WaitForm.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="x64"/>
+    <ROW Feature_="MainFeature" Component_="Reader.chm"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.EF6.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.Linq.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="SQLite.Interop.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="FarPoint.CalcEngine.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="FarPoint.Excel.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="FarPoint.PluginCalendar.WinForms.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="FarPoint.Win.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="FarPoint.Win.Spread.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="GrapeCity.CalcEngine.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="GrapeCity.Spreadsheet.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="GrapeCity.Spreadsheet.Win.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="BouncyCastle.Crypto.dll"/>
+    <ROW Feature_="MainFeature" Component_="GemBox.Spreadsheet.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="BouncyCastle.Cryptography.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="GemBox.Document.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevComponents.DotNetBar2.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="DevComponents.TreeGX.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Finsoft.Licensing.dll"/>
+    <ROW Feature_="MainFeature" Component_="UACHelper.dll"/>
+    <ROW Feature_="MainFeature" Component_="Runtimes"/>
+    <ROW Feature_="MainFeature" Component_="Latin1a.unicodeMap"/>
+    <ROW Feature_="MainFeature" Component_="License"/>
+    <ROW Feature_="MainFeature" Component_="ABL_HLP.chm"/>
+    <ROW Feature_="MainFeature" Component_="AI_INSTALLPERUSER"/>
+    <ROW Feature_="MainFeature" Component_="HarfBuzzSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="SkiaSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Buffers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ValueTuple.dll"/>
+    <ROW Feature_="MainFeature" Component_="tx32_css.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_doc.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_dox.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_htm.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_pdf.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_rtf.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_xlx.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="tx32_xml.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="txic.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="txkernel.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="txtools.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="TXBarcode.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXBarcode.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXBarcode.Windows.Forms.xml"/>
+    <ROW Feature_="MainFeature" Component_="TXDocumentServer.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXDocumentServer.Windows.Forms.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXDocumentServer.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXDrawing.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXDrawing.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXImageProvider.dll"/>
+    <ROW Feature_="MainFeature" Component_="txpdf.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXSVGGenerator.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXTextControl.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXTextControl.Server.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXTextControl.Windows.Forms.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXTextControl.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="en_US.aff"/>
+    <ROW Feature_="MainFeature" Component_="hyph_en_US.dic"/>
+    <ROW Feature_="MainFeature" Component_="th_en_US_v2.dat"/>
+    <ROW Feature_="MainFeature" Component_="TXSpell.dll"/>
+    <ROW Feature_="MainFeature" Component_="TXSpell.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="HtmlAgilityPack.dll"/>
+    <ROW Feature_="MainFeature" Component_="Config"/>
+    <ROW Feature_="MainFeature" Component_="VistaDB.6.dll"/>
+    <ROW Feature_="MainFeature" Component_="DataMigrationWizard.exe"/>
+    <ROW Feature_="MainFeature" Component_="TXWordStylesBasicArialFontNoBreaks.docx"/>
+    <ROW Feature_="MainFeature" Component_="Sample2022.MDB"/>
+    <ROW Feature_="MainFeature" Component_="AssetWriter.Utilities.exe"/>
+    <ROW Feature_="MainFeature" Component_="FontReg.exe"/>
+    <ROW Feature_="MainFeature" Component_="fontreg2.1.3redist.7z"/>
+    <ROW Feature_="MainFeature" Component_="Fonts"/>
+    <ROW Feature_="MainFeature" Component_="WPStyles"/>
+    <ROW Feature_="C4FE6FD5B7C4D07B3A313E754A9A6A8" Component_="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+    <ROW Feature_="MainFeature" Component_="VC_redist.x64.exe"/>
+    <ROW Feature_="MainFeature" Component_="AWL.lic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="AssetWriter.Main.exe" SourcePath="..\..\AssetWriter\AssetWriter\bin\Release\AssetWriter.Main.exe" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="103"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="AI_DetectSoftware" Sequence="102"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5102"/>
+    <ROW Action="AI_DATA_SETTER" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3102"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(REMOVE)" Sequence="3101"/>
+    <ROW Action="AI_XmlLocator" Sequence="101"/>
+    <ROW Action="AI_DETECT_MODERNWIN" Condition="(VersionNT &gt;= 603)" Sequence="53" MsiKey="AI_DETECT_MODERNWIN"/>
+    <ROW Action="AI_DETECT_WINTHEME" Condition="(VersionNT &gt;= 603)" Sequence="54" MsiKey="AI_DETECT_WINTHEME"/>
+    <ROW Action="AI_MigrateInstallerProps" Condition="SETUPEXEDIR AND ((UILevel = 2) OR (UILevel = 3))" Sequence="6597"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
+    <ROW Action="AI_ConfigureChainer" Condition="(NOT SETUPEXEDIR) AND ((UILevel = 2) OR (UILevel = 3)) AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6598"/>
+    <ROW Action="AI_LaunchChainer" Condition="AI_PREREQ_CHAINER AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6599"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="54"/>
+    <ROW Action="AI_DpiContentScale" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="52"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="104"/>
+    <ROW Action="AI_AppSearchEx" Sequence="103"/>
+    <ROW Action="AI_DetectSoftware" Sequence="102"/>
+    <ROW Action="AI_XmlLocator" Sequence="101"/>
+    <ROW Action="AI_RestartElevated" Sequence="51" Builds="DefaultBuild"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1296"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1297"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1298"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_CleanPrereq" Sequence="1302"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="Installed" Sequence="1299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_INTERNET_CONNECTION" Description="[ProductName] requires an active Internet connection for installation. Please check your network configuration and proxy settings." DescriptionLocId="AI.LaunchCondition.Internet" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_PHYSICAL_MEMORY &gt;= AI_REQUIRED_PHYSICAL_MEMORY" Description="[ProductName] cannot be installed on systems with less physical memory than [AI_REQUIRED_PHYSICAL_MEMORY] MB." DescriptionLocId="AI.LaunchCondition.RAM" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_INSTALLPERUSER" Root="2" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLPERUSER" Type="2"/>
+    <ROW Signature_="AI_INSTALLPERUSER_1" Root="1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLPERUSER" Type="2"/>
+    <ROW Signature_="AI_INSTALLPERUSER_2" Root="2" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLPERUSER" Type="18"/>
+    <ROW Signature_="AI_INSTALLPERUSER_3" Root="1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLPERUSER" Type="18"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_INSTALLPERUSER" Root="-1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLPERUSER" Value="[AI_INSTALLPERUSER]" Component_="AI_INSTALLPERUSER"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="C4FE6FD5B7C4D07B3A313E754A9A6A8" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="C4FE6FD5B7C4D07B3A313E754A9A6A8" Value="1" Component_="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Prereqs" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs" Name="\"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="UpgradeCode" Root="-1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ABLHelp" Directory_="SHORTCUTDIR" Name="ABLHEL~1|ABL Help" Component_="ABL_HLP.chm" Target="[#ABL_HLP.chm]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="AssetArchive" Directory_="SHORTCUTDIR" Name="ASSETW~1|AssetWriter" Component_="AssetReader.Main.exe" Target="[#AssetReader.Main.exe]" Description="AssetWriter Exam Software" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="AssetArchive1" Directory_="DesktopFolder" Name="ASSETW~1|AssetWriter" Component_="AssetReader.Main.exe" Target="[#AssetReader.Main.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="AssetWriter.Utilities" Directory_="SHORTCUTDIR" Name="ASSETW~3|AssetWriter Utilities" Component_="AssetWriter.Utilities.exe" Target="[#AssetWriter.Utilities.exe]" Description="AssetWriter Utilities Software" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="ReaderHelp" Directory_="SHORTCUTDIR" Name="ASSETW~2|AssetWriter Help" Component_="Reader.chm" Target="[#Reader.chm]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiTextStyleComponent">
+    <ROW TextStyle="DlgFont7" FaceName="Tahoma" Size="7" Color="0" StyleBits="0"/>
+    <ROW TextStyle="DlgFontBold8_DlgFontBold8" FaceName="Tahoma" Size="8" Color="0" StyleBits="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="769" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+    <ROW UpgradeCode="{22126442-E872-4844-BFF7-FEFE67483BD1}" VersionMax="2024.2.1.1" Language="1033" Attributes="517" ActionProperty="UPGRADE_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BF9259651485FB4F316A40CB01E7B" DisplayName=".NET Framework 4.8 (web installer)" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe" Location="1" ExactSize="1479400" WinNTVersions="Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86, Windows 10 version 22H2 x86" WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 10 version 22H2 x64, Windows Server 2022 x64, Windows 11 x64" Operator="1" NoUiComLine="/q /norestart" Options="xk" MD5="40604baf5a025f4b23cbe463239b68cb" TargetName=".NET Framework 4.8"/>
+    <ROW PrereqKey="C4FE6FD5B7C4D07B3A313E754A9A6A8" DisplayName="Visual C++ Redistributable for Visual Studio 2015-2022 x64" VersionMin="14.40" SetupFileUrl="..\..\RunTimes\CPLUS2022\VC_redist.x64.exe" Location="0" ExactSize="0" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64" Operator="1" NoUiComLine="/q /norestart" Options="xf" TargetName="Visual C++ Redistributable for Visual Studio 2015-2022\VC_redist.x64.exe" Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+    <ATTRIBUTE name="PrereqsOrder" value="C4FE6FD5B7C4D07B3A313E754A9A6A8 BF9259651485FB4F316A40CB01E7B"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BF9259651485FB4F316A40CB01E7BReleas" Prereq="BF9259651485FB4F316A40CB01E7B" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G528048" Order="1" Property="PreReqSearch_BF9259651485FB4F316A40"/>
+    <ROW SearchKey="C4FE6FD5B7C4D07B3A313E754A9A6A8Vers" Prereq="C4FE6FD5B7C4D07B3A313E754A9A6A8" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\DevDiv\VC\Servicing\14.0\RuntimeMinimum\Version" VerMin="14.40.33816" Order="1" Property="PreReqSearch_C4FE6FD5B7C4D07B3A313E"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="Spread" SourcePath="..\..\Assemblies\Spread\Winform" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="GemBox_Dir" SourcePath="..\..\Assemblies\GemBox" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="GemBoxDoc_Dir" SourcePath="..\..\Assemblies\GemBoxDoc" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="DotNetBar_Dir" SourcePath="..\..\Assemblies\DotNetBar" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="Rebex_Dir" SourcePath="..\..\Assemblies\Rebex" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="UACHelper_Dir" SourcePath="..\..\Assemblies\UACHelper" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="TX_Dir" SourcePath="..\..\Assemblies\TX" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="License_Dir" SourcePath="..\..\AssetWriter.Assemblies\License" Feature="MainFeature" IncludePattern="AWL.lic" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="__1_Dir" SourcePath="..\..\Assemblies\TX\64" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="TXSpell_Dir" SourcePath="..\..\Assemblies\TXSPELL" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="Dictionaries_Dir" SourcePath="..\..\Assemblies\TXSPELL\Dictionaries" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="HyphenationLists_Dir" SourcePath="..\..\Assemblies\TXSPELL\HyphenationLists" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="SynonymLists_Dir" SourcePath="..\..\Assemblies\TXSPELL\SynonymLists" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="HTMLAgilityPack_Dir" SourcePath="..\..\Assemblies\HtmlAgility" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="VistDb_Dir" SourcePath="..\..\Assemblies\VistaDB" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="WPStyles_Dir" SourcePath="..\..\AssetWriter.Assemblies\WPStyles" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="SampleDatabases_Dir" SourcePath="..\..\AssetWriter.Assemblies\Samples" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="Fonts_Dir" SourcePath="..\..\AssetWriter\AssetWriter.Utilities\Assemblies\Font" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="DBPromptToConvertToSD" ParentElement="Settings" Name="TrustedConnection" Condition="1" Order="8" Flags="14" Text="True" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DatabaseLast" ParentElement="Settings" Name="DatabaseName" Condition="1" Order="10" Flags="14" UpdateIndexInParent="0"/>
+    <ROW XmlElement="Debugging" ParentElement="Settings" Name="Debugging" Condition="1" Order="5" Flags="14" Text="False" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirBackup" ParentElement="Settings" Name="DirBackup" Condition="1" Order="1" Flags="12" Text="[DIRBACKUP]" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirExport" ParentElement="Settings" Name="DirExport" Condition="1" Order="4" Flags="12" Text="[DIREXPORT]" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirExportOption" ParentElement="Settings" Name="BorrowerLast" Condition="1" Order="9" Flags="14" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirFiles" ParentElement="Settings" Name="DirTemplate" Condition="1" Order="3" Flags="12" Text="[DIRTEMPLATE]" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirImport" ParentElement="Settings" Name="DirExam" Condition="1" Order="0" Flags="12" Text="[DIREXAM]" UpdateIndexInParent="0"/>
+    <ROW XmlElement="DirSecurity" ParentElement="Settings" Name="DirSecurity" Condition="1" Order="2" Flags="12" Text="[DIRSECURITY]" UpdateIndexInParent="0"/>
+    <ROW XmlElement="ErrorLoggingLogFile" ParentElement="Settings" Name="ErrorLoggingLogFile" Condition="1" Order="11" Flags="14" UpdateIndexInParent="0"/>
+    <ROW XmlElement="ErrorLoggingLogToFile" ParentElement="Settings" Name="ErrorLoggingLogToFile" Condition="1" Order="7" Flags="14" Text="TRUE" UpdateIndexInParent="0"/>
+    <ROW XmlElement="MustUpgrade" ParentElement="Settings" Name="MustUpgrade" Condition="1" Order="6" Flags="14" Text="True" UpdateIndexInParent="0"/>
+    <ROW XmlElement="Settings" Name="Settings" Condition="1" Order="0" Flags="30" UpdateIndexInParent="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="AssetReader.config" FileName="ASSETW~1.CON|AssetWriter.config" DirProperty="Config_Dir" Component="TXTextControl.dll" RootElement="Settings" Flags="25" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlLocatorComponent">
+    <ROW XmlLocator="0" XmlElement="1" Property="DIREXAM" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="1" XmlElement="2" Property="DIRSECURITY" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="2" XmlElement="3" Property="DIRBACKUP" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="3" XmlElement="4" Property="DIRTEMPLATE" Type="32" ResultType="2" Order="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlLocatorElementComponent">
+    <ROW XmlElement="0" XmlFile="[ProgramFiles64Folder]Finsoft\[ProductName]\Config\AssetWriter.config" Name="Settings" Order="0"/>
+    <ROW XmlElement="1" ParentElement="0" Name="DirImport" Order="0"/>
+    <ROW XmlElement="2" ParentElement="0" Name="DirSecurity" Order="1"/>
+    <ROW XmlElement="3" ParentElement="0" Name="DirBackup" Order="2"/>
+    <ROW XmlElement="4" ParentElement="0" Name="DirTemplate" Order="3"/>
+  </COMPONENT>
+</DOCUMENT>
