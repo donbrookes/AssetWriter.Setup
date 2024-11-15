@@ -963,12 +963,36 @@
     <ROW XmlLocator="1" XmlElement="2" Property="DIRSECURITY" Type="32" ResultType="2" Order="0"/>
     <ROW XmlLocator="2" XmlElement="3" Property="DIRBACKUP" Type="32" ResultType="2" Order="0"/>
     <ROW XmlLocator="3" XmlElement="4" Property="DIRTEMPLATE" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="4" XmlElement="5" Property="DIREXPORT" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="5" XmlElement="7" Property="DIREXAM" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="6" XmlElement="9" Property="DIREXAM" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="7" XmlElement="10" Property="DIRSECURITY" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="8" XmlElement="11" Property="DIRBACKUP" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="9" XmlElement="12" Property="DIRTEMPLATE" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="10" XmlElement="13" Property="DIREXPORT" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="11" XmlElement="14" Property="DIRSECURITY" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="12" XmlElement="15" Property="DIRBACKUP" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="13" XmlElement="16" Property="DIRTEMPLATE" Type="32" ResultType="2" Order="0"/>
+    <ROW XmlLocator="14" XmlElement="17" Property="DIREXPORT" Type="32" ResultType="2" Order="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.XmlLocatorElementComponent">
     <ROW XmlElement="0" XmlFile="[ProgramFiles64Folder]Finsoft\[ProductName]\Config\AssetWriter.config" Name="Settings" Order="0"/>
-    <ROW XmlElement="1" ParentElement="0" Name="DirImport" Order="0"/>
+    <ROW XmlElement="1" ParentElement="0" Name="DirExam" Order="0"/>
     <ROW XmlElement="2" ParentElement="0" Name="DirSecurity" Order="1"/>
     <ROW XmlElement="3" ParentElement="0" Name="DirBackup" Order="2"/>
     <ROW XmlElement="4" ParentElement="0" Name="DirTemplate" Order="3"/>
+    <ROW XmlElement="5" ParentElement="0" Name="DirExport" Order="4"/>
+    <ROW XmlElement="6" XmlFile="[ProgramFiles64Folder][ProductName]\Config\AssetWriter.config" Name="Settings" Order="0"/>
+    <ROW XmlElement="7" ParentElement="6" Name="DirExam" Order="0"/>
+    <ROW XmlElement="8" XmlFile="[PersonalFolder]Finsoft\Config\AssetWriter.config" Name="Settings" Order="0"/>
+    <ROW XmlElement="9" ParentElement="8" Name="DirExam" Order="0"/>
+    <ROW XmlElement="10" ParentElement="8" Name="DirSecurity" Order="1"/>
+    <ROW XmlElement="11" ParentElement="8" Name="DirBackup" Order="2"/>
+    <ROW XmlElement="12" ParentElement="8" Name="DirTemplate" Order="3"/>
+    <ROW XmlElement="13" ParentElement="8" Name="DirExport" Order="4"/>
+    <ROW XmlElement="14" ParentElement="6" Name="DirSecurity" Order="1"/>
+    <ROW XmlElement="15" ParentElement="6" Name="DirBackup" Order="2"/>
+    <ROW XmlElement="16" ParentElement="6" Name="DirTemplate" Order="3"/>
+    <ROW XmlElement="17" ParentElement="6" Name="DirExport" Order="4"/>
   </COMPONENT>
 </DOCUMENT>
