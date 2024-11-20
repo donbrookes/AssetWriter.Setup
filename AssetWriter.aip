@@ -106,10 +106,10 @@
     <ROW Property="DIRTEMPLATE" Value=" "/>
     <ROW Property="IAgree" Value="No" Type="4"/>
     <ROW Property="Manufacturer" Value="Finsoft"/>
-    <ROW Property="ProductCode" Value="1033:{6BA6FD19-EBFA-4492-BECE-9FDF2CAA8B97} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{7B4113FD-4D41-43A2-8150-69F3879AD355} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="AssetWriter"/>
-    <ROW Property="ProductVersion" Value="2024.4.2.4" Options="32"/>
+    <ROW Property="ProductVersion" Value="2024.4.2.5" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;UPGRADE_3;UPGRADE_4;UPGRADE_5;UPGRADE_6;UPGRADE_7;UPGRADE_8;UPGRADE_9;UPGRADE_1;UPGRADE_2;UPGRADE_10"/>
     <ROW Property="UpgradeCode" Value="{378C2D3D-707C-4777-AFA4-73E15A7644DE}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -289,6 +289,7 @@
     <ROW Component="GrapeCity.Win.PluginInputMan.Design.dll" ComponentId="{E762551C-3F2D-46C8-AFD9-46D088B418BA}" Directory_="Spread" Attributes="0" KeyPath="GrapeCity.Win.PluginInputMan.Design.dll"/>
     <ROW Component="GrapeCity.Win.PluginInputMan.dll" ComponentId="{DB96068C-F525-4FD4-91D0-559B1F3F88F4}" Directory_="Spread" Attributes="0" KeyPath="GrapeCity.Win.PluginInputMan.dll"/>
     <ROW Component="HarfBuzzSharp.dll" ComponentId="{444EC944-55E2-4CE3-9709-912B3E1B2599}" Directory_="GemBoxDoc_Dir" Attributes="0" KeyPath="HarfBuzzSharp.dll"/>
+    <ROW Component="HarfBuzzSharp.dll_1" ComponentId="{D8E8E449-62B5-47F4-9EAC-ADE96222F837}" Directory_="GemBox_Dir" Attributes="0" KeyPath="HarfBuzzSharp.dll_1"/>
     <ROW Component="HtmlAgilityPack.dll" ComponentId="{34E39F39-6FFC-4B47-B71C-35261283BD06}" Directory_="HTMLAgilityPack_Dir" Attributes="0" KeyPath="HtmlAgilityPack.dll"/>
     <ROW Component="Latin1a.unicodeMap" ComponentId="{0A476D2F-8AD5-4871-81CD-93FD0E5323EE}" Directory_="APPDIR" Attributes="0" KeyPath="AssetReader.Main.exe.config" Type="0"/>
     <ROW Component="License" ComponentId="{D0740086-BCC9-4ABE-9AB6-ACB30A42BA8C}" Directory_="License_Dir" Attributes="0"/>
@@ -494,6 +495,7 @@
     <ROW File="GrapeCity.Spreadsheet.WinForms.Ribbon.dll" Component_="GrapeCity.Spreadsheet.WinForms.Ribbon.dll" FileName="GRAPEC~5.DLL|GrapeCity.Spreadsheet.WinForms.Ribbon.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.Spreadsheet.WinForms.Ribbon.dll" SelfReg="false"/>
     <ROW File="GrapeCity.Win.PluginInputMan.Design.dll" Component_="GrapeCity.Win.PluginInputMan.Design.dll" FileName="GRAPEC~6.DLL|GrapeCity.Win.PluginInputMan.Design.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.Win.PluginInputMan.Design.dll" SelfReg="false"/>
     <ROW File="GrapeCity.Win.PluginInputMan.dll" Component_="GrapeCity.Win.PluginInputMan.dll" FileName="GRAPEC~7.DLL|GrapeCity.Win.PluginInputMan.dll" Attributes="0" SourcePath="..\..\Assemblies\Spread\Winform\GrapeCity.Win.PluginInputMan.dll" SelfReg="false"/>
+    <ROW File="HarfBuzzSharp.dll_1" Component_="HarfBuzzSharp.dll_1" FileName="HARFBU~1.DLL|HarfBuzzSharp.dll" Attributes="0" SourcePath="..\..\Assemblies\GemBox\HarfBuzzSharp.dll" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AiPersistentPropComponent">
     <ROW Property="AI_INSTALLPERUSER" Registry="AI_INSTALLPERUSER" HklmSearch="AI_INSTALLPERUSER" HkcuSearch="AI_INSTALLPERUSER_1" Hklm64Search="AI_INSTALLPERUSER_2" Hkcu64Search="AI_INSTALLPERUSER_3"/>
@@ -858,6 +860,7 @@
     <ROW Feature_="MainFeature" Component_="GrapeCity.Spreadsheet.WinForms.Ribbon.dll"/>
     <ROW Feature_="MainFeature" Component_="GrapeCity.Win.PluginInputMan.Design.dll"/>
     <ROW Feature_="MainFeature" Component_="GrapeCity.Win.PluginInputMan.dll"/>
+    <ROW Feature_="MainFeature" Component_="HarfBuzzSharp.dll_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="AssetWriter.Main.exe" SourcePath="..\..\AssetWriter\AssetWriter\bin\Release\AssetWriter.Main.exe" Index="0"/>
